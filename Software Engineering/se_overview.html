@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Software Engineering Overview - MERLIN</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="/assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">MERLIN</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          
+            <!-- Moon/Sun Mode toggle button  -->
+            <i id="theme-icon" class="nav-link nav-icon bi bi-moon theme-icon"></i>
+          <!-- End toggle button -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="se_tutorial.html">
+          <span>Software Engineering Tutorial</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link" href="se_overview.html">
+          <span>Software Engineering Overview</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="sdlc.html">
+          <span>Software Development Life Cycle</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse collapsed" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="sdlc.html">
+              <span>Software Development Life Cycle</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-overview.html">
+              <span>SDLC Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-waterfall-model.html">
+              <span>SDLC - Waterfall Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-iterative-model.html">
+              <span>SDLC - Iterative Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-spiral-model.html">
+              <span>SDLC - Spiral Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-v-model.html">
+              <span>SDLC - V-Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-big-bang-model.html">
+              <span>SDLC - Big Bang Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-agile-model.html">
+              <span>SDLC - Agile Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-rad-model.html">
+              <span>SDLC - Rad Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="sdlc-software-prototype-model.html">
+              <span>SDLC - Software Prototype Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-progress.html">
+              <span>SDLC - Quick Guide</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End sdlc Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-project-management.html">
+          <span>Software Project Management</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-design-basics.html">
+          <span>Software Design Basics</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-analysis-and-design-tools.html">
+          <span>Software Analysis & Design Tools</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-design-strategies.html">
+          <span>Software Design Strategies</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-UI-design.html">
+          <span>Software User Interface Design</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-design-complexity.html">
+          <span>Software Design Complexity</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-implementation.html">
+          <span>Software Implementation</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-testing.html">
+          <span>Software Testing Overview</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-maintenance-overview.html">
+          <span>Software Maintenance Overview</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="software-case-tools-overview.html">
+          <span>Software Case Tools Overview</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="se-exam-questions.html">
+          <span>SE Exams Questions</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="se-interview-questions.html">
+          <span>SE Interview Questions</span>
+        </a>
+      </li><!-- End Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Software Engineering Overview</h1>
+      <div class="d-flex justify-content-between">
+        <a href="se_tutorial.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="sdlc.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+       </div>
+    </div><!-- End Page Title -->
+    <section>
+      <p>Let us first understand what software engineering stands for. The term is made of two words, software
+        and engineering.</p>
+      <p><b>Software</b> is more than just a program code. A program is an executable code, which serves some
+        computational purpose. Software is considered to be collection of executable programming code,
+        associated libraries and documentations. Software, when made for a specific requirement is called a
+        <b>software product</b>.</p>
+      <p><b>Engineering</b> on the other hand, is all about developing products, using well-defined, scientific princi
+        and methods.</p>
+      <p><b>Software engineering</b> is an engineering branch associated with development of software product using
+        well-defined scientific principles, methods and procedures. The outcome of software engineering is
+        efficient and reliable software products</p>
+      
+      <h3>Software Evolution</h3>
+      <p>The process of developing a software product using software engineering principles and methods is
+        referred to as <b>software evolution</b>. This includes the initial development of software and its maintenance
+        and updates, till desired software product is developed, which satisfies the expected requirements.
+        </p>
+      <p>Evolution starts from the requirement gathering process. After which developers create a prototype of
+        the intended software and show it to the users to get their feedback at the early stage of software
+        product development. The users suggest changes, on which several consecutive updates and
+        maintenance keep on changing too. This process changes to the original software, till the desired
+        software is accomplished.</p>
+      <p>Even after the user has desired software in hand, the advancing technology and the changing
+        requirements force the software product to change accordingly. Re-creating software from scratch and
+        to go one-on-one with requirement is not feasible. The only feasible and economical solution is to
+        update the existing software so that it matches the latest requirements.
+        </p>
+      <h3>Software Evolution Laws</h3>
+      <p>Lehman has given laws for software evolution. He divided the software into three different categories:</p>
+      <ul class="card">
+        <li><b>S-type (static-type)</b> - This is a software, which works strictly according to defined
+          <u>specifications and solutions</u>. The solution and the method to achieve it, both are immediately
+          understood before coding. The s-type software is least subjected to changes hence this is the
+          simplest of all. For example, calculator program for mathematical computation.
+          </li>
+        <li><b>P-type (practical-type)</b> - This is a software with a collection of <u>procedures</u>. This is defined by
+          exactly what procedures can do. In this software, the specifications can be described but the
+          solution is not obvious instantly. For example, gaming software.</li>
+        <li><b>E-type (embedded-type)</b> - This software works closely as the requirement of real-world
+          <u>environment</u>. This software has a high degree of evolution as there are various changes in laws,
+          taxes etc. in the real world situations. For example, Online trading software.
+          </li>
+      </ul>
+      <h3>E-type Software Evolution</h3>
+      <p>Lehman has given eight laws for E-Type software evolution:</p>
+      <ul class="card">
+        <li><b>Continuing change</b> - An E-type software system must continue to adapt to the real world
+          changes, else it becomes progressively less useful.
+          </li>
+        <li><b>Increasing complexity</b> - As an E-type software system evolves, its complexity tends to increase
+          unless work is done to maintain or reduce it.
+          </li>
+        <li><b>Conservation of familiarity</b> - The familiarity with the software or the knowledge about how it
+          was developed, why was it developed in that particular manner etc. must be retained at any
+          cost, to implement the changes in the system.
+          </li>
+        <li><b>Continuing growth</b> - In order for an E-type system intended to resolve some business problem,
+          its size of implementing the changes grows according to the lifestyle changes of the business.
+          </li>
+        <li><b>Reducing quality</b> - An E-type software system declines in quality unless rigorously maintained
+          and adapted to a changing operational environment.</li>
+        <li><b>Feedback systems</b> - The E-type software systems constitute multi-loop, multi-level feedback
+          systems and must be treated as such to be successfully modified or improved.</li>
+        <li><b>Self-regulation</b> - E-type system evolution processes are self-regulating with the distribution of
+          product and process measures close to normal.</li>
+        <li><b>Organizational stability</b> - The average effective global activity rate in an evolving E-type system
+          is invariant over the lifetime of the product.</li>
+      </ul>
+      <h3>Software Paradigms</h3>
+      <p><b>Software paradigms</b> refer to the methods and steps, which are taken while designing the software.
+      </p>
+      <p>There are many methods proposed and are in work today, but we need to see where in the software
+        engineering these paradigms stand. These can be combined into various categories, though each of
+        Programming paradigm is a subset of Software design paradigm which is further a subset of Software
+        development paradigm.</p>
+
+      <h3>Software Development Paradigm</h3>
+      <p>This Paradigm is known as software engineering paradigm is where all the engineering concepts
+        pertaining to the development of software are applied. It includes various researches and requirement
+        gathering which helps the software product to build. It consists of:
+      <ul class="card">
+        <li>Requirement Gathering</li>
+        <li>Software Design</li>
+        <li>Programming</li>
+      </ul>
+      </p>
+
+      <h3>Software Design Paradigm</h3>
+      <p>This paradigm is a part of Software Development and includes:
+        <ul class="card">
+          <li>Design</li>
+          <li>Maintenance</li>
+          <li>Programming</li>
+        </ul>
+      </p>
+
+      <h3>Programming Paradigm</h3>
+      <p>
+        <ul class="card">
+        <li>Coding</li>
+        <li>Testing</li>
+        <li>Integration</li>
+      </ul>
+      </p>
+
+      <h3>Need of Software Engineering</h3>
+      <p>The need of software engineering arises because of higher rate of change in user requirements and
+        environment on which the software is working.
+      <ul class="card">
+        <li><b>Large software</b> - It is easier to build a wall than to a house or building, likewise, as the size of
+          software become large engineering has to step to give it a scientific process.</li>
+        <li><b>Scalability</b> - If the software process were not based on scientific and engineering concepts, it
+          would be easier to re-create new software than to scale an existing one.</li>
+        <li><b>Cost</b> - As hardware industry has shown its skills and huge manufacturing has lower down he
+          price of computer and electronic hardware. But the cost of software remains high if proper
+          process is not adapted.</li>
+        <li><b>Dynamic Nature</b> - The always growing and adapting nature of software hugely depends upon
+          the environment in which user works. If the nature of software is always changing, new
+          enhancements need to be done in the existing one. This is where software engineering plays a
+          good role.</li>
+        <li><b>Quality Management</b> - Better process of software development provides better and quality
+          software product.</li>
+      </ul></p>
+
+      <h3>Characteristics Of a Good Software</h3>
+      <p>A software product can be judged by what it offers and how well it can be used. This software must
+        satisfy on the following grounds:
+      <ul class="card">
+        <li>Operational</li>
+        <li>Transitional</li>
+        <li>Maintenance</li>
+      </ul>
+      </p>
+      <p>Well-engineered and crafted software is expected to have the following characteristics:</p>
+      <h4>Operational</h4>
+      <p>This tells us how well software works in operations. It can be measured on:
+        <ul class="card">
+          <li>Usability</li>
+          <li>Efficiency</li>
+          <li>Correctness</li>
+          <li>Functionality</li>
+          <li>Dependability</li>
+          <li>Security</li>
+          <li>Safety</li>
+        </ul>
+      </p>
+      <h4>Transitional</h4>
+      <p>This aspect is important when the software is moved from one platform to another.
+        <ul class="card">
+          <li>Portability</li>
+          <li>Interoperability</li>
+          <li>Reusability</li>
+          <li>Adaptability</li>
+        </ul>
+      </p>
+      <h4>Maintenance</h4>
+      <p>This aspect briefs about how well a software has the capabilities to maintain itself in the ever-changing
+        environment.
+      <ul class="card">
+        <li>Modularity</li>
+        <li>Maintainability</li>
+        <li>Flexibility</li>
+        <li>Scalability</li>
+      </ul></p>
+      <p>In short, Software engineering is a branch of computer science, which uses well-defined engineeri
+        concepts required to produce efficient, durable, scalable, in-budget and on-time software products.</p>
+    </section>
+    
+
+    <!-- ======= Buttons ======= -->
+   <div class="d-flex justify-content-between align-items-center flex-wrap pt-5">
+    <div class="">
+      <button onclick="printMain()" class="btn btn-success btn-right"><i class="bi bi-printer"></i> Print Page</button>
+    </div>
+    <div class="">
+      <a href="se_tutorial.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+      <a href="sdlc.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+    </div>
+   </div>
+
+  </main><!-- End #main -->
+
+  
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>MERLIN</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://excelskennedy2.github.io/Portfolio">Excels Kennedy</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>
