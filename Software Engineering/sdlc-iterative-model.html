@@ -22,7 +22,7 @@
   <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -32,8 +32,8 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="/assets/img/logo.png" alt="">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">MERLIN</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -226,15 +226,59 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Software Engineering Overview</h1>
+      <h1>SDLC - Iterative Model</h1>
       <div class="d-flex justify-content-between">
-        <a href="" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
-        <a href="" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+        <a href="sdlc-waterfall-model.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="sdlc-spiral-model.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
        </div>
     </div><!-- End Page Title -->
     <section>
-      <h1 id="greeting">Hello</h1>
-      <p>Hello world</p>
+      <p>In the Iterative model, iterative process starts with a simple implementation of a small set of the
+        software requirements and iteratively enhances the evolving versions until the complete system is
+        implemented and ready to be deployed.</p>
+      <p>An iterative life cycle model does not attempt to start with a full specification of requirements. Instead, 
+        development begins by specifying and implementing just part of the software, which is then reviewed to
+        identify further requirements. This process is then repeated, producing a new version of the software at
+        the end of each iteration of the model.
+        </p>
+      
+      <h3>Iterative Model - Design</h3>
+      <p>Iterative process starts with a simple implementation of a subset of the software requirements and
+        iteratively enhances the evolving versions until the full system is implemented. At each iteration, design
+        modifications are made and new functional capabilities are added. The basic idea behind this method is 
+        to develop a system through repeated cycles (iterative) and in smaller portions at a time (incremental).</p>
+      <p>The following illustration is a representation of the Iterative and Incremental model:</p>
+      <img src="images/iterative-model-2.png" alt="iterative-model-2" class="img-fluid">
+      <p>Iterative and Incremental development is a combination of both iterative design or iterative method and
+        incremental build model for development. "During software development, more than one iteration of the
+        software development cycle may be in progress at the same time." This process may be described as
+        an "evolutionary acquisition" or "incremental build" approach."</p>
+      <p>In this incremental model, the whole requirement is divided into various builds. During each iteration, the
+        development module goes through the requirements, design, implementation and testing phases. Each
+        subsequent release of the module adds function to the previous release. The process continues till the
+        complete system is ready as per the requirement.</p>
+      <p>The key to a successful use of an iterative software development lifecycle is rigorous validation of
+        requirements, and verification & testing of each version of the software against those requirements 
+        within each cycle of the model. As the software evolves through successive cycles, tests must be
+        repeated and extended to verify each version of the software.</p>
+
+      <h3>Iterative Model - Application</h3>
+      <p>Like other SDLC models, Iterative and incremental development has some specific applications in the 
+        software industry. This model is most often used in the following scenarios:
+      <ul class="card">
+        <li>Requirements of the complete system are clearly defined and understood.</li>
+        <li>Major requirements must be defined; however, some functionalities or requested
+          enhancements may evolve with time.</li>
+        <li>There is a time to the market constraint.</li>
+        <li>A new technology is being used and is being learnt by the development team while working on
+        the project.</li>
+        <li>Resources with needed skill sets are not available and are planned to be used on contract basis
+        for specific iterations.</li>
+        <li>There are some high-risk features and goals which may change in the future.</li>
+      </ul></p>
+
+      <h3>Iterative Model - Pros and Cons</h3>
+      <p></p>
     </section>
     
 
@@ -244,8 +288,8 @@
       <button onclick="printMain()" class="btn btn-success btn-right"><i class="bi bi-printer"></i> Print Page</button>
     </div>
     <div class="">
-      <a href="" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
-      <a href="" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+      <a href="sdlc-waterfall-model.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+      <a href="sdlc-spiral-model.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
     </div>
    </div>
 
@@ -266,17 +310,11 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/script.js"></script>
-
-</body>
-
-</html>
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/script.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/script.js"></script>
 
 </body>
 
