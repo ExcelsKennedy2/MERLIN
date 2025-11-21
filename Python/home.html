@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Python Tutorial - MERLIN</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">MERLIN</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+
+          <!-- Moon/Sun Mode toggle button  -->
+          <i id="theme-icon" class="nav-link nav-icon bi bi-moon theme-icon"></i>
+          <!-- End toggle button -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">
+          <span>Python Home</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="introduction.html">
+          <span>Python Introduction</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Syntax</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Comments</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Variables</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Datatypes</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Numbers</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Casting</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Strings</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Booleans</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Operators</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Lists</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Tuples</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Sets</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Dictionaries</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python If....Else</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python While Loops</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python For Loops</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Functions</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Lambda</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Arrays</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Classes/Objects</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Inheritance</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Iterators</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Scope</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Modules</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Dates</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Math</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python JSON</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python RegEx</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python PIP</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Try...Except</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python User Input</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python String Formatting</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+      <h3 class="pt-3">File Handling</h3>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python File Handling</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Read Files</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Write/Create Files</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Delete Files</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+      <h3 class="pt-3">Python Modules</h3>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>NumPy Tutorial</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Pandas Tutorial</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Django Tutorial</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+      <h3 class="pt-3">Python Matplotlib</h3>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Intro</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Pyplot</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Plotting</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Markers</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Line</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Labels</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Grid</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Subplot</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Scatter</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Bars</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Histograms</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Pie Charts</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+      <h3 class="pt-3">Machine Learning</h3>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Getting Started</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Mean Median Mode</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Standard Deviation</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Percentile</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Data Distribution</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Normal Data Distribution</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Scatter Plot</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Linear Regression</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Polynomial Regression</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Multiple Regression</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Scale</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Train/Test</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Decision Tree</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Confusion Matrix</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Hierarchical Clustering</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Logistic Regression</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Grid Search</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Categorical Data</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>K-Means</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Bootstrap Aggregation</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Cross Validation</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>AUC - ROC Curve</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>K-nearest neighbors</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Python Tutorial</h1>
+      <div class="d-flex justify-content-between">
+        <a href="introduction.html" class="btn btn-outline-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+      </div>
+    </div><!-- End Page Title -->
+    <section>
+
+      <p> Today, Python is one of the most popular programming languages. Although it is a general-purpose
+        language, it is used in various areas of applications such as Machine Learning, Artificial Intelligence,
+        web development, IoT, and more.</p>
+
+      <p>This Python tutorial has been written for the beginners to help them understand the basic to advanced
+        concepts of Python Programming Language. After completing this tutorial, you will find yourself at a
+        great level of expertise in Python, from where you can take yourself to the next levels to become a
+        world class Software Engineer.</p>
+
+      <h3>What is Python?</h3>
+      <p>Python
+        is a very popular general-purpose interpreted, interactive, object-oriented, and high-level
+        programming language. Python is a dynamically-typed and garbage-collected programming language. It
+        was created by <b>Guido van Rossum</b> during 1985- 1990.</p>
+      <p> Python supports multiple programming paradigms, including Procedural, Object Oriented
+        and Functional programming language. Python design philosophy emphasizes code
+        readability with the use of significant indentation.</p>
+      <p> This Python tutorial gives a complete understanding of Python programming language, starting from
+        basic concepts to advanced concepts. This tutorial will take you through simple and practical
+        approaches while learning Python Programming language.</p>
+
+      <h3>Characteristics of Python</h3>
+      <ul>
+        <li>It supports functional and structured programming methods as well as OOP.</li>
+        <li>It can be used as a scripting language or can be compiled to byte-code for building large
+          applications.</li>
+        <li>It provides very high-level dynamic data types and supports dynamic type checking.</li>
+        <li>It supports automatic garbage collection.</li>
+        <li>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+      </ul>
+
+      <h3> Applications of Python</h3>
+      <ul>
+        <li> In Data Science, Python libraries like <b>Numpy</b>, <b>Pandas</b>, and <b>Matplotlib</b> are
+          used for <b>data analysis and visualization</b>.</li>
+        <li>Python frameworks like <b>Django</b>, and <b>Pyramid</b>, make the development and deployment
+          of Web Applications easy.</li>
+        <li>This programming language also extends its applications to <b>computer vision</b> and
+          <b>image processing</b>.
+        </li>
+        <li>It is also favored in many tasks like <b>Automation</b>, <b>Job Scheduling</b>, <b>GUI development</b>, etc.
+        </li>
+      </ul>
+
+      <h3>Features of Python</h3>
+      <ul>
+        <li><b>Easy-to-learn</b> - Python has few keywords, simple structure, and a clearly defined syntax. This
+          allows the student to pick up the language quickly.</li>
+        <li><b>Easy-to-read</b> - Python code is more clearly defined and visible to the eyes.</li>
+        <li><b>Easy-to-maintain</b> - Python's source code is fairly easy-to-maintain.</li>
+        <li><b>A broad standard library</b> - Python's bulk of the library is very portable and cross-platform
+          compatible on UNIX, Windows, and Macintosh.</li>
+        <li><b>Interactive Mode</b> - Python has support for an interactive mode that allows interactive testing
+          and debugging of snippets of code.</li>
+        <li><b>Portable</b> - Python can run on a wide variety of hardware platforms and has the same
+          interface on all platforms.</li>
+        <li><b>Extendable</b> - You can add low-level modules to the Python interpreter. These modules enable
+          programmers to add to or customize their tools to be more efficient.</li>
+        <li><b>Databases</b> - Python provides interfaces to all major commercial databases.</li>
+        <li><b> GUI Programming</b> - Python supports GUI applications that can be created and ported to
+          many system calls, libraries, and Windows systems, such as Windows MFC, Macintosh, and the X
+          Window system of Unix.</li>
+        <li><b>Scalable</b> - Python provides a better structure and support for large programs than shell
+          scripting.</li>
+      </ul>
+
+      <h3> Why to Learn Python?</h3>
+      <p>Python is consistently rated as one of the world's most popular programming languages. Python is
+        fairly easy to learn, so if you are starting to learn any programming language, then Python could be
+        your great choice. Today, various schools, colleges, and universities are teaching Python as their
+        primary programming language. There are many other good reasons that make Python the top choice
+        of any programmer:</p>
+      <ul>
+        <li> Python is open source, which means it's available free of cost.</li>
+        <li> Python is simple and so easy to learn.</li>
+        <li> Python is versatile and can be used to create many different things.</li>
+        <li>Python has powerful development libraries, including AI, ML, etc.</li>
+        <li>Python is much in demand and ensures a high salary.</li>
+      </ul>
+      <p> Python
+        is a MUST for students and working professionals to become great software engineers,
+        especially when they are working in the web development domain. I will list down some of the key
+        advantages of learning Python:
+      <ul>
+        <li><b>Python is Interpreted</b> - Python is processed at runtime by the interpreter. You do not need to
+          compile your program before executing it. This is similar to PERL and PHP.</li>
+        <li><b>Python is Interactive</b> - You can actually sit at a Python prompt and interact with the
+          interpreter directly to write your programs.</li>
+        <li><b>Python is Object-Oriented</b> - Python supports Object-Oriented style or technique of
+          programming that encapsulates code within objects.</li>
+        <li><b> Python is a Beginner's Language</b> - Python is a great language for the beginner-level
+          programmers and supports the development of a wide range of applications from simple text
+          processing to WWW browsers to games.</li>
+      </ul>
+      </p>
+
+      <h3> Pythonic Code Style</h3>
+      <p> Python leaves you free to choose to program in an object-oriented, procedural, functional, aspect
+        oriented, or even logic-oriented way. These freedoms make Python a great language to write clean
+        and beautiful code.</p>
+      <p> Pythonic Code Style is actually more of a design philosophy and suggests to write a code which is :
+      <ul>
+        <li>Clean Simple</li>
+        <li>Beautiful</li>
+        <li>Explicit</li>
+        <li>Readable</li>
+      </ul>
+      </p>
+
+      <h3>Careers with Python</h3>
+      <p> If you know Python nicely, then you have a great career ahead. Here are just a few of the career
+        options where Python is a key skill:</p>
+      <ul>
+        <li>Game developer</li>
+        <li>Web designer</li>
+        <li>Python developer</li>
+        <li>Machine learning engineer</li>
+        <li>Data scientist</li>
+        <li>Data analyst</li>
+        <li>Data engineer</li>
+        <li>DevOps engineer</li>
+        <li>Software engineer</li>
+      </ul>
+
+      <h3> Download Python</h3>
+      <p> You can download Python from its official website: <a
+          href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+
+      <h3> Target Audience: Who Can Learn Python?</h3>
+      <p> This tutorial has been prepared for the beginners to help them understand the basics to advanced
+        concepts of Python programming language. After completing this tutorial, you will find yourself at a
+        great level of expertise in Python programming, from where you can take yourself to the next levels.</p>
+
+      <h3> Prerequisites to Learn Python</h3>
+      <p> Although it is a beginners tutorial, we assume that the readers have a reasonable exposure to any
+        programming environment and knowledge of basic concepts such as variables, commands, syntax,
+        etc.</p>
+
+
+    </section>
+
+
+    <!-- ======= Buttons ======= -->
+    <div class="d-flex justify-content-between align-items-center flex-wrap pt-5">
+      <div class="">
+        <button onclick="printMain()" class="btn btn-success btn-right"><i class="bi bi-printer"></i> Print
+          Page</button>
+      </div>
+      <div class="">
+        <!-- <a href="" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a> -->
+        <a href="introduction.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+      </div>
+    </div>
+
+  </main><!-- End #main -->
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>MERLIN</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://excelskennedy2.github.io/Portfolio">Excels Kennedy</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

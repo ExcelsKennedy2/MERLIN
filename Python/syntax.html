@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Python Syntax - MERLIN</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">MERLIN</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+
+          <!-- Moon/Sun Mode toggle button  -->
+          <i id="theme-icon" class="nav-link nav-icon bi bi-moon theme-icon"></i>
+          <!-- End toggle button -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="home.html">
+          <span>Python Home</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="introduction.html">
+          <span>Python Introduction</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link" href="syntax.html">
+          <span>Python Syntax</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="comments.html">
+          <span>Python Comments</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Variables</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Datatypes</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Numbers</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Casting</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Strings</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Booleans</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Operators</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Lists</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Tuples</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Sets</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Dictionaries</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python If....Else</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python While Loops</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python For Loops</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Functions</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Lambda</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Arrays</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Classes/Objects</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Inheritance</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Iterators</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Scope</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Modules</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Dates</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Math</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python JSON</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python RegEx</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python PIP</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Try...Except</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python User Input</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python String Formatting</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+      <h3 class="pt-3">File Handling</h3>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python File Handling</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Read Files</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Write/Create Files</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Python Delete Files</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+      <h3 class="pt-3">Python Modules</h3>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>NumPy Tutorial</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Pandas Tutorial</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Django Tutorial</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+      <h3 class="pt-3">Python Matplotlib</h3>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Intro</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Pyplot</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Plotting</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Markers</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Line</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Labels</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Grid</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Subplot</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Scatter</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Bars</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Histograms</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Matplotlib Pie Charts</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+      <h3 class="pt-3">Machine Learning</h3>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Getting Started</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Mean Median Mode</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Standard Deviation</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Percentile</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Data Distribution</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Normal Data Distribution</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Scatter Plot</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Linear Regression</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Polynomial Regression</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Multiple Regression</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Scale</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Train/Test</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Decision Tree</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Confusion Matrix</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Hierarchical Clustering</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Logistic Regression</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Grid Search</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Categorical Data</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>K-Means</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Bootstrap Aggregation</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>Cross Validation</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>AUC - ROC Curve</span>
+        </a>
+      </li><!-- End Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          <span>K-nearest neighbors</span>
+        </a>
+      </li><!-- End Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Python Syntax</h1>
+      <div class="d-flex justify-content-between">
+        <a href="introduction.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="comments.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+      </div>
+    </div><!-- End Page Title -->
+    <section>
+
+      <h1 id="greeting">Hello</h1>
+      <p>Hello world</p>
+
+
+    </section>
+
+
+    <!-- ======= Buttons ======= -->
+    <div class="d-flex justify-content-between align-items-center flex-wrap pt-5">
+      <div class="">
+        <button onclick="printMain()" class="btn btn-success btn-right"><i class="bi bi-printer"></i> Print
+          Page</button>
+      </div>
+      <div class="">
+        <a href="introduction.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="comments.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+      </div>
+    </div>
+
+  </main><!-- End #main -->
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>MERLIN</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="https://excelskennedy2.github.io/Portfolio">Excels Kennedy</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
