@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Python Introduction - MERLIN</title>
+  <title>Python Variables - MERLIN</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,7 +26,7 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
-  <!-- prism -->
+    <!-- prism -->
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.min.css">
@@ -37,7 +37,7 @@
 
 </head>
 
-<body class="line-numbers">
+<body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
@@ -90,7 +90,7 @@
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link" href="introduction.html">
+        <a class="nav-link collapsed" href="introduction.html">
           <span>Python Introduction</span>
         </a>
       </li><!-- End Nav -->
@@ -108,7 +108,7 @@
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="variables.html">
+        <a class="nav-link" href="variables.html">
           <span>Python Variables</span>
         </a>
       </li><!-- End Nav -->
@@ -559,242 +559,18 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Python Introduction</h1>
+      <h1>Python Variables</h1>
       <div class="d-flex justify-content-between">
-        <a href="home.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
-        <a href="syntax.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+        <a href="comments.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="datatypes.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
       </div>
     </div><!-- End Page Title -->
     <section>
 
-      <p> Python is a general-purpose programming language. It is suitable for the development of a wide range
-        of software applications. Over the last few years Python has been the preferred language of choice for
-        developers in the following application areas:
-      <ul>
-        <li><a href="#1">Machine Learning</a></li>
-        <li><a href="#2">Web Development</a></li>
-        <li><a href="#3">Computer Vision and Image processing</a></li>
-        <li><a href="#4">Embedded Systems and IoT</a></li>
-        <li><a href="#5">Job Scheduling and Automation</a></li>
-        <li><a href="#6">Console-based Applications</a></li>
-        <li><a href="#7">Game Development</a></li>
-        <li><a href="#8">Data Science</a></li>
-      </ul>
-      </p>
+      <h1 id="greeting">Hello</h1>
+      <p>Hello world</p>
 
-      <h3 id="1">Machine Learning</h3>
-      <p> Python libraries such as <b>Scikit-learn</b> and <b>TensorFlow</b> help in building models for prediction of
-        trends
-        like customer satisfaction, projected values of stocks etc. based upon the past data. Machine learning
-        applications include (but not restricted to) medical diagnosis, statistical arbitrage, basket analysis,
-        sales prediction etc.</p>
 
-      <h3 id="2">Web Development</h3>
-      <p> Python's web frameworks facilitate rapid web application development. <b>Django</b>, <b>Pyramid</b>,
-        <b>Flask</b> are
-        very popular among the web developer community. etc. make it very easy to develop and deploy
-        simple as well as complex web applications.
-      </p>
-
-      <h3 id="3">Computer Vision and Image processing</h3>
-      <p><b>OpenCV</b> is a widely popular library for capturing and processing images. Image processing algorithms
-        extract information from images, reconstruct image and video data. Computer Vision uses image
-        processing for face detection and pattern recognition. OpenCV is a C++ library. Its Python port is
-        extensively used because of its rapid development feature.</p>
-      <p> Some of the application areas of computer vision are <b>robotics</b>, <b>industrial surveillance</b>,
-        <b>automation</b>, and
-        <b>biometrics</b> etc.
-      </p>
-
-      <h3 id="4">Embedded Systems and IoT</h3>
-      <p>Micropython, a lightweight version especially for microcontrollers like
-        <b>Arduino</b>. Many automation products, robotics, IoT, and kiosk applications are built around Arduino and
-        programmed with Micropython. <b>Raspberry Pi</b> is also very popular alow cost single board computer
-        used for these type of applications.
-      </p>
-
-      <h3 id="5"> Job Scheduling and Automation</h3>
-      <p> Python found one of its first applications in automating CRON (Command Run ON) jobs. Certain tasks
-        like periodic data backups, can be written in Python scripts scheduled to be invoked automatically by
-        operating system scheduler.</p>
-
-      <h3 id="6">Console-based Applications</h3>
-      <p>Python is often employed to build CLI (command-line interface) applications. Such scripts can be
-        used to run scheduled CRON jobs such as taking database backups etc. There are many Python
-        libraries that parse the command line arguments. The argparse library comes bundled with Pythons
-        standard library. You can use Click (part of Flask framework) and Typer (included in FastAPI
-        framework) to build console interfaces to the web-based applications built by the respective
-        frameworks. Textual is a rapid development framework to build apps that run inside a terminal as well
-        as browsers.</p>
-
-      <h3 id="7">Game Development</h3>
-      <p>Some popular gaming apps have been built with Python. Examples include BattleField2, The Sims 4,
-        World of Tanks, Pirates of the Caribbean, and more. These apps are built with one of the following
-        Python libraries.</p>
-      <p><b>Pygame</b> is one of the most popular Python libraries used to build engaging computer games. Pygame
-        is an open-source Python library for making multimedia applications like games built on top of the
-        excellent SDL library. It is a cross-platform library, which means you can build a game that can run on
-        any operating system platform.</p>
-      <p>Another library <b>Kivy</b> is also widely used to build desktop as well as mobile-based games. Kivy has a
-        multi-touch interface. It is an open-source and cross-platform Python library for rapid development of
-        game applications. Kivy runs on Linux, Windows, OS X, Android, iOS, and Raspberry Pi.</p>
-      <p><b>PyKyra</b> library is based on both SDL (Software and Documentation Localisation) and the Kyra engine.
-        It is one of the fastest game development frameworks. PyKyra supports MPEG , MP3, Ogg Vorbis,
-        Wav, etc., multimedia formats.</p>
-
-      <h3 id="8">Data Science</h3>
-      <p> Python's recent meteoric rise in the popularity charts is largely due to its Data science libraries.
-        Python has become an essential skill for data scientists. Today, real time web applications, mobile
-        applications and other devices generate huge amount of data. Python's data science libraries help
-        companies generate business insights from this data.</p>
-      <p>Libraries like <b>NumPy</b>, <b>Pandas</b>, and <b>Matplotlib</b> are extensively used to apply mathematical
-        algorithms
-        to the data and generate <b>visualizations</b>. Commercial and community Python distributions like
-        Anaconda and ActiveState bundle all the essential libraries required for data science.</p>
-
-      <hr class="my-5">
-
-      <h3>Features of Python</h3>
-      <p>Python is a feature-rich, high-level, interpreted, interactive, and object-oriented scripting language.
-        Python is a versatile and very popular programming language due to its features such as readability,
-        simplicity, extensive libraries, and many more. In this tutorial, we will learn about the various features
-        of Python that make it a powerful and versatile programming language.</p>
-      <p>Below are some of the features of python:
-      <ul>
-        <li><a href="#9">Easy to Learn</a></li>
-        <li><a href="#10">Dynamically Typed</a></li>
-        <li><a href="#11">Interactive</a></li>
-        <li><a href="#12">Standard Library</a></li>
-        <li><a href="#13">Open Source and Cross Platform</a></li>
-        <li><a href="#14">Database Connectivity</a></li>
-        <li><a href="#15">Extensible</a></li>
-        <li><a href="#16"> Active Developer Community</a></li>
-      </ul>
-      </p>
-
-      <h3 id="9">Easy to Learn</h3>
-      <p>This is one of the most important reasons for the popularity of Python. Python has a limited set of
-        keywords. Its features such as simple <b>syntax</b>, usage of indentation to avoid clutter of curly brackets
-        and dynamic typing that doesn't necessitate prior declaration of variable help a beginner to learn
-        Python quickly and easily</p>
-
-      <h3 id="10"> Dynamically Typed</h3>
-      <p> Python is a dynamically typed programming language. In Python, you don't need to specify the
-        variable time at the time of the variable declaration. The types are specified at the runtime based on
-        the assigned value due to its dynamically typed feature.</p>
-
-      <h3 id="11">Interactive</h3>
-      <p> Standard Python distribution comes with an interactive shell that works on the principle of REPL
-        (Read Evaluate Print Loop). The shell presents a Python prompt >>>. You can type any valid Python
-        expression and press Enter. Python interpreter immediately returns the response and the prompt
-        comes back to read the next expression.</p>
-      <pre><code class="language-python no-line-numbers">
-          >>> 2*3+1
-          7
-          >>> print ("Hello World")
-          Hello World
-        </code></pre>
-      <p> The interactive mode is especially useful to get familiar with a library and test out its functionality. You
-        can try out small code snippets in interactive mode before writing a program.</p>
-
-      <h3 id="12">Standard Library</h3>
-      <p>
-        Even though it has a very few keywords (only Thirty Five), Python software is distributed with a
-        standard library made of large number of modules and packages. Thus Python has out of box support
-        for programming needs such as serialization, data compression, internet data handling, and many
-        more. Python is known for its batteries included approach.</p>
-      <p>Some of the Python's popular modules are:
-      <ul>
-        <li>NumPy</li>
-        <li>Pandas</li>
-        <li>Matplotlib</li>
-        <li>Tkinter</li>
-        <li>Math</li>
-      </ul>
-      </p>
-
-      <h3 id="13">Open Source and Cross Platform</h3>
-      <p>Python's standard distribution can be downloaded from <a
-          href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> without
-        any restrictions. You can download pre-compiled binaries for various operating system platforms. In
-        addition, the source code is also freely available, which is why it comes under open source category.</p>
-      <p>Python software (along with the documentation) is distributed under Python Software Foundation
-        License. It is a BSD style permissive software license and compatible to GNU GPL (General Public
-        License).</p>
-      <p>Python is a cross-platform language. Pre-compiled binaries are available for use on various operating
-        system platforms such as <b>Windows</b>, <b>Linux</b>, <b>Mac OS</b>, <b>Android OS</b>. The reference
-        implementation of
-        Python is called CPython and is written in C. You can download the source code and compile it for
-        your OS platform.</p>
-
-      <h3 id="14">Database Connectivity</h3>
-      <p> Almost any type of database can be used as a backend with the Python application. DB-API is a set of
-        specifications for database driver software to let Python communicate with a relational database.
-        With many third party libraries, Python can also work with NoSQL databases such as MongoDB.</p>
-
-      <h3 id="15">Extensible</h3>
-      <p> The term extensibility implies the ability to add new features or modify existing features. As stated
-        earlier, CPython (which is Python's reference implementation) is written in C. Hence one can easily
-        write modules/libraries in C and incorporate them in the standard library. There are other
-        implementations of Python such as <b>Jython</b> (written in Java) and <b>IPython</b> (written in C#). Hence, it
-        is possible to write and merge new functionality in these implementations with Java and C#
-        respectively.</p>
-
-      <h3 id="16">Active Developer Community</h3>
-      <p> As a result of Python's popularity and open-source nature, a large number of Python developers often
-        interact with online forums and conferences. Python Software Foundation also has a significant
-        member base, involved in the organization's mission to <b>"Promote, Protect, and Advance the Python Programming
-          Language"</b>.</p>
-      <p>Python also enjoys a significant institutional support. Major IT companies Google, Microsoft, and
-        Meta contribute immensely by preparing documentation and other resources.</p>
-
-      <hr class="my-5">
-      <h3>Installing Python</h3>
-      <p>Many PCs and Macs will have python already installed.</p>
-      <p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the following
-        on the Command Line (cmd.exe):</p>
-      <pre><code class="no-line-numbers language-powershell">
-          C:\Users\Your Name>python --version
-        </code></pre>
-      <p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the
-        Terminal and type:</p>
-      <pre><code class="no-line-numbers language-powershell">
-          python --version
-        </code></pre>
-      <p>If you find that you do not have Python installed on your computer, then you can download it for free from the
-        following website: <a href="https://www.python.org/">https://www.python.org/</a> </p>
-
-      <h3>Quickstart</h3>
-      <p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a
-        text editor and then put those files into the python interpreter to be executed.</p>
-      <p>The way to run a python file is like this on the command line:</p>
-      <pre><code class="no-line-numbers language-powershell">C:\Users\Your Name>python helloworld.py</code></pre>
-      <p>Where "helloworld.py" is the name of your python file.</p>
-      <p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
-      <pre><code class="no-line-numbers language-python">print("Hello, World!")</code></pre>
-      <p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file,
-        and run:</p>
-      <pre><code class="no-line-numbers language-python">C:\Users\Your Name>python helloworld.py</code></pre>
-      <p>The output should read:</p>
-      <pre><code class="no-line-numbers language-python">Hello, World!</code></pre>
-      <p>Congratulations, you have written and executed your first Python program.</p>
-
-      <hr class="my-5">
-      <hr class="mb-5">
-
-      <h3>The Python Command Line</h3>
-      <p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file.
-        This is made possible because Python can be run as a command line itself.</p>
-      <p>Type the following on the Windows, Mac or Linux command line:</p>
-      <pre><code class="no-line-numbers language-powershell">python</code></pre>
-      <p>Or, if the "python" command did not work, you can try "py":</p>
-      <pre><code class="no-line-numbers language-powershell">py</code></pre>
-      <p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
-      <pre><code class="no-line-numbers language-powershell">>>> print("Hello, World!")</code></pre>
-      <p>Which will write "Hello, World!" in the command line:</p>
-      <pre><code class="no-line-numbers language-powershell">Hello, World!</code></pre>
-      <p>Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:</p>
-      <pre><code class="no-line-numbers language-powershell">exit()</code></pre>
     </section>
 
 
@@ -805,8 +581,8 @@
           Page</button>
       </div>
       <div class="">
-        <a href="home.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
-        <a href="syntax.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+        <a href="comments.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="datatypes.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
       </div>
     </div>
 
@@ -834,7 +610,7 @@
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/script.js"></script>
 
-  <!-- prism -->
+    <!-- prism -->
   <script src="../assets/js/prism.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.min.js"></script>

@@ -236,6 +236,24 @@ h3 {
   padding: 25px;
 }
 
+.card-error {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c46b97;
+  color: #ebeef4;
+  padding: 25px;
+}
+
+.card-desc {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #494545;
+  color: #ebeef4;
+  padding: 25px;
+}
+
 .card-header,
 .card-footer {
   border-color: #ebeef4;
