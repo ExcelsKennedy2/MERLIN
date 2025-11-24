@@ -568,11 +568,151 @@
     </div><!-- End Page Title -->
     <section>
 
-      <p> Python comments are programmer-readable explanation or annotations in the Python source code.
+      <p>Python comments are programmer-readable explanation or annotations in the Python source code.
         They are added with the purpose of making the source code easier for humans to understand, and are
         ignored by Python interpreter. Comments enhance the readability of the code and help the
         programmers to understand the code very carefully.</p>
 
+      <p>If we execute the code given below, the output produced will simply print "Hello, World!" to the
+        console, as comments are ignored by the Python interpreter and do not affect the execution of the
+        program:</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-python">
+    # This is a comment
+    print("Hello, World!")  
+  </code></pre>
+      </div>
+      <h3>Single Line Comments in Python</h3>
+      <p>Single-line comments in Python start with a hash symbol (#) and extend to the end of the line. They
+        are used to provide short explanations or notes about the code. They can be placed on their own line
+        above the code they describe, or at the end of a line of code (known as an inline comment) to provide
+        context or clarification about that specific line.</p>
+      <p>In this example, the standalone single-line comment is placed above the "greet" function":</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <p>This is a single line comment.</p>
+        <pre><code class="language-python">
+     # Standalone single line comment is placed here
+    def greet():
+      print("Hello, World!")
+    greet()
+  </code></pre>
+      </div>
+      <p>An inline single-line comment is a comment that appears on the same line as a piece of code:</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <p>This is an inline single line.</p>
+        <pre><code class="language-python">
+     print("Hello, World!")  # Inline single line comment is placed here
+  </code></pre>
+      </div>
+
+      <h4>Multi Line Comments in Python</h4>
+      <p> In Python, multi-line comments are used to provide longer explanations or notes that span multiple
+        lines. While Python does not have a specific syntax for multi-line comments, there are two common
+        ways to achieve this: consecutive single-line comments and triple-quoted strings:</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <p>This is an example of a multi line comments:</p>
+        <pre><code class="language-py">
+    # This function calculates the factorial of a number
+    # using an iterative approach. The factorial of a number
+    # n is the product of all positive integers less than or
+    # equal to n. For example, factorial(5) is 5*4*3*2*1 = 120.
+
+    def factorial(n):
+      if n < 0:
+        return "Factorial is not defined for negative numbers"
+    result = 1
+      for i in range(1, n + 1):
+        result *= i
+    return result
+    
+    number = 5
+    print(f"The factorial of {number} is {factorial(number)}")
+  </code></pre>
+      </div>
+      <p> This pattern is often used for block comments or when documenting sections of code that require
+        detailed explanations.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <p>Example of a block comment</p>
+        <pre><code class="language-py">
+    """
+    This function calculates the greatest common divisor (GCD)
+    of two numbers using the Euclidean algorithm. The GCD of
+    two numbers is the largest number that divides both of them
+    without leaving a remainder.
+    """
+    def gcd(a, b):
+      while b:
+        a, b = b, a % b
+      return a
+
+    result = gcd(48, 18)
+    print("The GCD of 48 and 18 is:", result)
+  </code></pre>
+      </div>
+
+      <h4>Python Docstrings</h4>
+      <p>In Python, docstrings are a special type of comment that is used to document modules, classes,
+        functions, and methods. They are written using triple quotes (''' or """) and are placed immediately after
+        the definition of the entity they document.
+        Docstrings can be accessed programmatically, making them an integral part of Pythons built-in
+        documentation tools.</p>
+
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+      def greet(name):
+        """
+        This function greets the person whose name is passed as a parameter.
+        
+        Parameters:
+        name (str): The name of the person to greet
+
+        Returns:
+        None
+        """
+        print(f"Hello, {name}!")
+      greet("Alice")
+  </code></pre>
+      </div>
+
+<h3> Accessing Docstrings</h3>
+<p> Docstrings can be accessed using the .__doc__ attribute or the help() function. This makes it easy to
+ view the documentation for any module, class, function, or method directly from the interactive
+ Python shell or within the code.</p>
+ <div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+      parameter.
+
+      Parameters:
+      name (str): The name of the person to greet
+      Returns:
+      None
+      """
+      print(greet.__doc__)
+  </code></pre>
+  <p> Using the help() Function</p>
+  <pre><code class="language-py">
+    
+    
+    def greet(name):
+      """
+      This function greets the person whose name is passed as a 
+      parameter.
+      Parameters:
+      name (str): The name of the person to greet
+
+      Returns:
+      None
+      """
+    help(greet)
+  </code></pre>
+ </div>
 
     </section>
 
@@ -622,6 +762,8 @@
   <script src="../assets/js/prism-line-highlight.min.js"></script>
   <script src="../assets/js/prism-line-numbers.js"></script>
   <script src="../assets/js/prism-line-numbers.min.js"></script>
+  <script src="../assets/js/prism-python.js"></script>
+  <script src="../assets/js/prism-python.min.js"></script>
 
 </body>
 
