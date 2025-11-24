@@ -686,14 +686,20 @@
  Python shell or within the code.</p>
  <div class="card-desc">
   <h4>Example</h4>
+  <p>Example using the .__doc__ attribute</p>
   <pre><code class="language-py">
-      parameter.
+      def greet(name):
+        """
+        This function greets the person whose name is passed as a parameter.
 
-      Parameters:
-      name (str): The name of the person to greet
-      Returns:
-      None
-      """
+        Parameters:
+        parameter.
+
+        Parameters:
+        name (str): The name of the person to greet
+        Returns:
+        None
+        """
       print(greet.__doc__)
   </code></pre>
   <p> Using the help() Function</p>
