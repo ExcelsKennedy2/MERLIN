@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Python Syntax - MERLIN</title>
+  <title>Python Numbers - MERLIN</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,7 +26,7 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
-  <!-- prism -->
+    <!-- prism -->
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.min.css">
@@ -96,7 +96,7 @@
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link" href="syntax.html">
+        <a class="nav-link collapsed" href="syntax.html">
           <span>Python Syntax</span>
         </a>
       </li><!-- End Nav -->
@@ -120,7 +120,7 @@
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="numbers.html">
+        <a class="nav-link" href="numbers.html">
           <span>Python Numbers</span>
         </a>
       </li><!-- End Nav -->
@@ -559,305 +559,17 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Python Syntax</h1>
+      <h1>Python Numbers</h1>
       <div class="d-flex justify-content-between">
-        <a href="introduction.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i>
-          Previous</a>
-        <a href="comments.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+        <a href="datatypes.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="casting.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
       </div>
     </div><!-- End Page Title -->
     <section>
 
-      <p>The Python syntax defines a set of rules that are used to create a Python Program. The Python
-        Programming Language Syntax has many similarities to Perl, C, and Java Programming Languages.
-        However, there are some definite differences between the languages.</p>
+      <h1 id="greeting">Hello</h1>
+      <p>Hello world</p>
 
-      <h3>Execute Python Syntax</h3>
-      <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
-      <pre><code class="no-line-numbers language-powershell">
-        >>> print("Hello, World!")
-        Hello, World!</code></pre>
-      <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:
-      </p>
-      <pre><code class="no-line-numbers language-powershell">C:\Users\Your Name>python myfile.py</code></pre>
-      <h3>Python Indentation</h3>
-      <p>Indentation refers to the spaces at the beginning of a code line.</p>
-      <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python
-        is very important.</p>
-      <p>Python uses indentation to indicate a block of code.</p>
-
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-          if 5 > 2:
-            print("Five is greater than two!")
-        </code></pre>
-      </div>
-
-      <p>Python will give you an error if you skip the indentation:</p>
-      <div class="card-error">
-        <h4>Example</h4>
-        <p>Syntax Error:</p>
-        <pre><code class="no-line-numbers language-python">
-          if 5 > 2:
-          print("Five is greater than two!")
-        </code></pre>
-      </div>
-      <p>The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.
-      </p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-          if 5 > 2:
-            print("Five is greater than two!")
-          if 5 > 2:
-                  print("Five is greater than two!")
-        </code></pre>
-      </div>
-      <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
-      </p>
-      <div class="card-error">
-        <h4>Example</h4>
-        <p>Syntax Error:</p>
-        <pre><code class="no-line-numbers language-python">
-          if 5 > 2:
-            print("Five is greater than two!")
-                  print("Five is greater than two!")
-        </code></pre>
-      </div>
-
-      <hr class="my-5">
-      <hr class="my-5">
-
-      <h3> Python Identifiers</h3>
-      <p> A Python identifier is a name used to identify a variable, function, class, module or other object. An
-        identifier starts with a letter A to Z or a to z or an underscore (_) followed by zero or more letters,
-        underscores and digits (0 to 9).</p>
-
-      <p>Python does not allow punctuation characters such as &commat;, $, and % within identifiers.</p>
-      <p class="card"> Python is a case sensitive programming language. Thus, *Manpower* and *manpower* are two
-        different identifiers in Python.</p>
-      <p> Here are naming conventions for Python identifiers:</p>
-      <ul class="card">
-        <li> Python Class names start with an uppercase letter. All other identifiers start with a lowercase
-          letter.</li>
-        <li>Starting an identifier with a single leading underscore indicates that the identifier is a
-          <b>private</b> identifier.
-        </li>
-        <li> Starting an identifier with two leading underscores indicates a strong <b>private</b> identifier.</li>
-        <li> If the identifier also ends with two trailing underscores, the identifier is a <b>language-defined</b>
-          special name.</li>
-      </ul>
-
-      <hr>
-
-      <h3>Python Variables</h3>
-      <p>In Python, variables are created when you assign a value to it:</p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <p>Variables in Python:</p>
-        <pre><code class="no-line-numbers language-python">
-          x = 5
-          y = "Hello, World!"</code></pre>
-      </div>
-      <p>Python has no command for declaring a variable.</p>
-      <p>You will learn more about variables in the <a href="variables.html">Python Variables</a> chapter.</p>
-
-      <hr>
-
-      <h3>Comments</h3>
-      <p>Python has commenting capability for the purpose of in-code documentation.</p>
-      <p>Comments start with a #, and Python will render the rest of the line as a comment:</p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <p>Comments in Python:</p>
-        <pre><code class="no-line-numbers language-python">
-          #This is a comment.
-          print("Hello, World!")</code></pre>
-      </div>
-
-      <hr>
-
-      <h3>Python Reserved Words</h3>
-      <div class="container">
-        <table class="table table-bordered table-striped">
-          <tr>
-            <td>and</td>
-            <td>as</td>
-            <td>assert</td>
-          </tr>
-          <tr>
-            <td>break</td>
-            <td>class</td>
-            <td>continue</td>
-          </tr>
-          <tr>
-            <td>def</td>
-            <td>del</td>
-            <td>elif</td>
-          </tr>
-          <tr>
-            <td>else</td>
-            <td>except</td>
-            <td>False</td>
-          </tr>
-          <tr>
-            <td>finally</td>
-            <td>for</td>
-            <td>from</td>
-          </tr>
-          <tr>
-            <td>global</td>
-            <td>if</td>
-            <td>import</td>
-          </tr>
-          <tr>
-            <td>in</td>
-            <td>is</td>
-            <td>lambda</td>
-          </tr>
-          <tr>
-            <td>None</td>
-            <td>nonlocal</td>
-            <td>not</td>
-          </tr>
-          <tr>
-            <td>or</td>
-            <td>pass</td>
-            <td>raise</td>
-          </tr>
-          <tr>
-            <td>return</td>
-            <td>True</td>
-            <td>try</td>
-          </tr>
-          <tr>
-            <td>while</td>
-            <td>with</td>
-            <td>yield</td>
-          </tr>
-        </table>
-      </div>
-
-      <hr>
-
-      <h3> Python Multi-Line Statements</h3>
-      <p> Statements in Python typically end with a new line. Python does, however, allow the use of the line
-        continuation character (\) to denote that the line should continue. For example:</p>
-
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-        total = item_one + \
-                item_two + \
-                item_three</code></pre>
-      </div>
-      <p> Statements contained within the [], {}, or () brackets do not need to use the line continuation character.
-        For example following statement works well in Python:</p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-         days = ['Monday', 'Tuesday', 'Wednesday',
-                'Thursday', 'Friday']</code></pre>
-      </div>
-
-      <hr>
-
-      <h3>Quotations in Python</h3>
-      <p>Python accepts single ('), double (") and triple (''' or """) quotes to denote string literals, as long as the
-        same type of quote starts and ends the string.</p>
-      <p> The triple quotes are used to span the string across multiple lines. For example, all the following are
-        legal:</p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-          word = 'word'
-          print (word)
-
-          sentence = "This is a sentence."
-          print (sentence)
-
-          paragraph = """This is a paragraph. It is
-            made up of multiple lines and sentences."""
-          print (paragraph)</code></pre>
-      </div>
-
-      <hr>
-
-      <h3> Using Blank Lines in Python Programs</h3>
-      <p> A line containing only whitespace, possibly with a comment, is known as a blank line and Python
-        totally ignores it.</p>
-      <p> In an interactive interpreter session, you must enter an empty physical line to terminate a multiline
-        statement.</p>
-
-      <hr>
-
-      <h3> Waiting for the User</h3>
-      <p> The following line of the program displays the prompt, the statement saying Press the enter key to
-        exit, and waits for the user to take action:</p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-           #!/usr/bin/python
-
-          raw_input("\n\nPress the enter key to exit.")</code></pre>
-      </div>
-      <p> Here, "\n\n" is used to create two new lines before displaying the actual line. Once the user presses
-        the key, the program ends. This is a nice trick to keep a console window open until the user is done
-        with an application.</p>
-
-      <hr>
-
-      <h3>Multiple Statements on a Single Line</h3>
-      <p> The semicolon ( ; ) allows multiple statements on the single line given that neither statement starts a
-        new code block. Here is a sample snip using the semicolon:</p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-            import sys; x = 'foo'; sys.stdout.write(x + '\n')</code></pre>
-      </div>
-
-      <hr>
-
-      <h3>Multiple Statement Groups as Suites</h3>
-      <p> A group of individual statements, which make a single code block are called <b>suites</b> in Python.Compound
-        or complex statements, such as if, while, def, and class require a header line and a suite.</p>
-      <p> Header lines begin the statement (with the keyword) and terminate with a colon ( : ) and are followed
-        by one or more lines which make up the suite. For example:</p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-              if expression :
-                suite
-              elif expression :
-                suite
-              else :
-                suite</code></pre>
-      </div>
-
-      <hr>
-
-      <h3>Command Line Arguments in Python</h3>
-      <p> Many programs can be run to provide you with some basic information about how they should be run.
-        Python enables you to do this with -h:</p>
-      <div class="card-desc">
-        <h4>Example</h4>
-        <pre><code class="no-line-numbers language-python">
-              $ python3 -h
-              usage: python3 [option] ... [-c cmd | -m mod | file | -] [arg] ...
-              Options and arguments (and corresponding environment variables):
-              
-              -c cmd : program passed in as string (terminates option list)
-              -d     : debug output from parser (also PYTHONDEBUG=x)
-              -E     : ignore environment variables (such as PYTHONPATH)
-              -h     : print this help message and exit
-
-              [ etc. ]</code></pre>
-
-      </div>
-      <p> You can also program your script in such a way that it should accept various options. Command Line
-        Arguments is an advanced topic and should be studied a bit later once you have gone through rest of
-        the Python concepts.</p>
 
     </section>
 
@@ -869,9 +581,8 @@
           Page</button>
       </div>
       <div class="">
-        <a href="introduction.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i>
-          Previous</a>
-        <a href="comments.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
+        <a href="datatypes.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="casting.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
       </div>
     </div>
 
@@ -899,7 +610,7 @@
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/script.js"></script>
 
-  <!-- prism -->
+    <!-- prism -->
   <script src="../assets/js/prism.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.min.js"></script>
@@ -907,8 +618,6 @@
   <script src="../assets/js/prism-line-highlight.min.js"></script>
   <script src="../assets/js/prism-line-numbers.js"></script>
   <script src="../assets/js/prism-line-numbers.min.js"></script>
-  <script src="../assets/js/prism-python.js"></script>
-  <script src="../assets/js/prism-python.min.js"></script>
   <script src="../assets/js/prism-powershell.js"></script>
   <script src="../assets/js/prism-powershell.min.js"></script>
 

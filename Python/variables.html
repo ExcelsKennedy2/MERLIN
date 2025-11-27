@@ -120,49 +120,49 @@
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="numbers.html">
           <span>Python Numbers</span>
         </a>
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="casting.html">
           <span>Python Casting</span>
         </a>
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="strings.html">
           <span>Python Strings</span>
         </a>
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="booleans.html">
           <span>Python Booleans</span>
         </a>
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="operators.html">
           <span>Python Operators</span>
         </a>
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="lists.html">
           <span>Python Lists</span>
         </a>
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="tuples.html">
           <span>Python Tuples</span>
         </a>
       </li><!-- End Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="sets.html">
           <span>Python Sets</span>
         </a>
       </li><!-- End Nav -->
@@ -567,8 +567,386 @@
     </div><!-- End Page Title -->
     <section>
 
-      <h1 id="greeting">Hello</h1>
-      <p>Hello world</p>
+      <p> Python variables are the reserved memory locations used to store values with in a Python Program.
+ This means that when you create a variable you reserve some space in the memory.</p>
+ <p> Based on the data type of a variable, memory space is allocated to it. Therefore, by assigning different
+ data types to Python variables, you can store integers, decimals or characters in these variables.</p>
+
+ <h3>Memory Addresses</h3>
+ <p> Data items belonging to different data types are stored in computer's memory. Computer's memory
+ locations are having a number or address, internally represented in binary form. Data is also stored in
+ binary form as the computer works on the principle of binary representation. In the following diagram,
+ a string <b>May</b> and a number <b>18</b> is shown as stored in memory locations.</p>
+<img src="images/variables-memory.png" class="img-fluid" alt="memory-address">
+<p> If you know the assembly language, you will covert these data items and the memory address, and
+ give a machine language instruction. However, it is not easy for everybody. Language translator such
+ as Python interpreter performs this type of conversion. It stores the object in a randomly chosen
+ memory location. Python's built-in <b>id()</b> function returns the address where the object is stored.</p>
+ <img src="images/variables-memory-2.png" class="img-fluid" alt="memory-address">
+ <p> Once the data is stored in the memory, it should be accessed repeatedly for performing a certain
+ process. Obviously, fetching the data from its ID is cumbersome. High level languages like Python
+ make it possible to give a suitable alias or a label to refer to the memory location.</p>
+ <p> In the above example, let us label the location of May as month, and location in which 18 is stored as
+ age. Python uses the assignment operator (=) to bind an object with the label.</p>
+ <img src="images/variables-memory-3.png" alt="memory-address" class="img-fluid">
+ <p> The data object (May) and its name (month) have the same id(). The id() of 18 and age are also same.</p>
+ <img src="images/variables-memory-4.png" class="img-fluid" alt="memory-address">
+ <p> The label is an identifier. It is usually called as a variable. A Python variable is a symbolic name that is
+ a reference or pointer to an object.</p>
+
+ <h3>Creating Python Variables</h3>
+ <p> Python variables do not need explicit declaration to reserve memory space or you can say to create a
+ variable. A Python variable is created automatically when you assign a value to it. The equal sign (=) is
+ used to assign values to variables.</p>
+ <p>The operand to the left of the = operator is the name of the variable and the operand to the right of the
+ = operator is the value stored in the variable. For example:</p>
+ <div class="card-desc">
+  <h4>Example</h4>
+  <p>This example creates different types (an integer, a float, and a string) of variables.</p>
+  <pre><code class="language-python">
+    counter = 100       # Creates an integer variable
+    miles = 1000.0      # Creates a floating variable
+    name = "Zara Ali"   # Creates a string variable
+  </code></pre>
+ </div>
+
+ <h3>Printing Python Variables</h3>
+ <p> Once we create a Python variable and assign a value to it, we can print it using 
+<b>print()</b> function. <br>Following is the extension of previous example and shows how to print different variables in Python:</p>
+ <div class="card-desc">
+  <h4>Example</h4>
+  <p>This example creates different types (an integer, a float, and a string) of variables.</p>
+  <pre><code class="language-python">
+    counter = 100       # Creates an integer variable
+    miles = 1000.0      # Creates a floating variable
+    name = "Zara Ali"   # Creates a string variable
+
+
+    print(counter)
+    print(miles)
+    print(name)
+  </code></pre>
+ </div>
+
+ <p> Here, 100, 1000.0 and "Zara Ali" are the values assigned to counter, miles, and name variables,
+ respectively. When running the above Python program, this produces the following result:</p>
+ <div class="card-desc">
+  <p>100</p>
+  <p>1000.0</p>
+  <p>Zara Ali</p>
+ </div>
+
+ <h3>Deleting Python Variables</h3>
+ <p> You can delete the reference to a number object by using the del statement. The syntax of the del
+ statement is:</p>
+ <pre><code class="language-py">del var1[,var2[,var3[....,varN]]]]</code></pre>
+ <p> You can delete a single object or multiple objects by using the del statement. For example:</p>
+ <pre><code class="language-py">
+  del var
+  del var_a, var_b
+ </code></pre>
+
+ <div class="card-desc">
+  <h4>Example</h4>
+  <p> Following examples shows how we can delete a variable and if we try to use a deleted variable then
+ Python interpreter will throw an error:</p>
+ <pre><code class="language-python">
+  counter = 100
+  print (counter)
+
+  del counter
+  print (counter)
+ </code></pre>
+ </div>
+ <p>This will produce the following result:</p>
+ <pre><code class="language-powershell">
+ 100
+ Traceback (most recent call last):
+  File "main.py", line 7, in < module >
+    print (counter)
+ NameError: name 'counter' is not defined
+ </code></pre>
+
+ <h3>Getting The Type of a Variable</h3>
+<p> You can get the data type of a Python variable using the python built-in function type() as follows.</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-python">
+    x = "Zara"
+    y = 10
+    z = 10.10
+
+    print(type(x))
+    print(type(y))
+    print(type(z))
+  </code></pre>
+</div>
+<p>This will produce the following result:</p>
+<pre><code class="language-powershell">
+ < class 'str' >
+ < class 'int' >
+ < class 'float' >
+</code></pre>
+
+<h3>Casting Python Variables</h3>
+<p> You can specify the data type of a variable with the help of casting as follows:</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <p> This example demonstrates case sensitivity of variables.</p>
+  <pre><code class="language-python">
+    x = str(10)    # x will be '10'
+    y = int(10)    # y will be 10
+    z = float(10)  # z will be 10.0
+
+    print( "x =", x )
+    print( "y =", y )
+    print( "z =", z )
+  </code></pre>
+</div>
+<p>This will produce the following result:</p>
+<pre><code class="language-powershell">
+  x = 10
+  y = 10
+  z = 10.0
+</code></pre>
+
+<h3>Case-Sensitivity of Python Variables</h3>
+<p> Python variables are case sensitive which means <b>Age</b> and <b>age</b> are two different variables:</p>
+<pre><code class="language-python">
+  age = 20
+  Age = 30
+
+  print("age =", age)
+  print("Age =", Age)
+</code></pre>
+<p>This will produce the following result:</p>
+<pre><code class="language-powershell">
+  age = 20
+  Age = 30
+</code></pre>
+
+<h3>Python Variables - Multiple Assignment</h3>
+<p> Python allows to initialize more than one variables in a single statement. In the following case, three
+ variables have same value.</p>
+ <pre><code class="language-powershell">
+    >>> a=10
+    >>> b=10
+    >>> c=10
+ </code></pre>
+ <p> Instead of separate assignments, you can do it in a single assignment statement as follows:</p>
+ <pre><code class="language-powershell">
+  >>> a=b=c=10
+  >>> print (a,b,c)
+  10 10 10
+ </code></pre>
+ <p> In the following case, we have three variables with different values.</p>
+ <pre><code class="language-powershell">
+  >>> a=10
+  >>> b=20
+  >>> c=30
+ </code></pre>
+ <p> These separate assignment statements can be combined in one. You need to give comma separated
+ variable names on left, and comma separated values on the right of = operator.</p>
+ <pre><code class="language-powershell">
+    >>> a,b,c = 10,20,30
+    >>> print (a,b,c)
+    10 20 30
+ </code></pre>
+
+ <p> Let's try few examples in script mode:</p>
+ <pre><code class="language-python">
+    a = b = c = 100
+
+    print (a)
+    print (b)
+    print (c)
+ </code></pre>
+
+ <p>This produces the following result:</p>
+ <div class="card-desc">
+  <pre><code class="language-powershell">
+    100
+    100
+    100
+  </code></pre>
+ </div>
+
+ <p> Here, an integer object is created with the value 1, and all three variables are assigned to the same
+ memory location. You can also assign multiple objects to multiple variables. For example:</p>
+ <pre><code class="language-python">
+  a, b, c = 1, 2, "Zara Ali"
+
+  print(a)
+  print(b)
+  print(c)
+
+ </code></pre>
+
+ <p>This produces the following result:</p>
+ <pre><code class="language-powershell">
+  1
+  2
+  Zara alia
+
+ </code></pre>
+ <p> Here, two integer objects with values 1 and 2 are assigned to variables a and b respectively, and one
+ string object with the value "Zara Ali" is assigned to the variable c.</p>
+
+ <h3> Python Variables - Naming Convention</h3>
+ <p> Every Python variable should have a unique name like a, b, c. A variable name can be meaningful like
+ color, age, name etc. There are certain rules which should be taken care while naming a Python
+ variable:</p>
+ <div class="card">
+  <ul>
+    <li>A variable name must start with a letter or the underscore character.</li>
+    <li> A variable name cannot start with a number or any special character like $, (, * % etc.</li>
+    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+    <li>Python variable names are case-sensitive which means Name and NAME are two different
+ variables in Python.</li>
+ <li> Python reserved keywords cannot be used naming the variable.</li>
+  </ul>
+ </div>
+ <p> If the name of variable contains multiple words, we should use these naming patterns:</p>
+ <div class="card">
+  <ul>
+    <li><b> Camel case</b> - First letter is a lowercase, but first letter of each subsequent word is in
+ uppercase. For example: kmPerHour, pricePerLitre</li>
+ <li><b> Pascal case</b> - First letter of each word is in uppercase. For example: KmPerHour,
+ PricePerLitre</li>
+ <li><b>Snake case</b> - Use single underscore (_) character to separate words. For example:
+ km_per_hour, price_per_litre</li>
+  </ul>
+ </div>
+
+ <div class="card-desc">
+  <h4>Example</h4>
+  <p> Following are valid Python variable names:</p>
+  <pre><code class="language-python">
+    counter = 100
+    _count = 100
+    name1 = "Zara"
+    name2 = "Nuha"
+    Age = 20
+    zara_salary = 100000
+
+    print (counter)
+    print (_count)
+    print (name1)
+    print (name2)
+    print (Age)
+    print (zara_salary)
+  </code></pre>
+ </div>
+
+ <p>This will produce the following result:</p>
+ <pre><code class="language-powershell">
+  100
+  100
+  Zara
+  Nuha
+  20
+  100000
+ </code></pre>
+
+ <div class="card-desc">
+  <h4>Example</h4>
+  <p> Following are invalid Python variable names:</p>
+  <pre><code class="language-python">
+    1counter = 100
+    $_count  = 100
+    zara-salary = 100000
+
+    print (1counter)
+    print ($count)
+    print (zara-salary)
+  </code></pre>
+ </div>
+
+<p>This will produce the following result:</p>
+<pre><code class="language-powershell">
+    File "main.py", line 3
+        1counter = 100
+              ^
+    SyntaxError: invalid syntax
+</code></pre>
+
+<h4>Example</h4>
+<p> Once you use a variable to identify a data object, it can be used repeatedly without its id() value. Here,
+ we have a variables height and width of a rectangle. We can compute the area and perimeter with
+ these variables.</p>
+ <pre><code class="language-powershell">
+  >>> width=10
+  >>> height=20
+  >>> area=width*height
+  >>> area
+  200
+  >>> perimeter=2*(width+height)
+  >>> perimeter
+  60
+ </code></pre>
+
+ <p>Use of variables is especially advantageous when writing scripts or programs. Following script also
+ uses the above variables.</p>
+
+<pre><code class="language-python">
+#! /usr/bin/python3
+
+ width = 10
+ height = 20
+ area = width*height
+ perimeter = 2*(width+height)
+ print ("Area = ", area)
+ print ("Perimeter = ", perimeter)
+
+</code></pre>
+
+<p>Save the above script with .py extension and execute from command-line. The result would be:</p>
+<pre><code class="language-powershell">
+  Area = 200
+  Perimeter = 60
+</code></pre>
+
+<h3>Python Local Variables</h3>
+<p> Python Local Variables are defined inside a function. We can not access variable outside the function.</p>
+<p class="card"> A Python function is a piece of reusable code and you will learn more about functions in 
+  Python - Functions tutorial.</p>
+  <div class="card-desc">
+    <h4>Example</h4>
+    <p> Following is an example to show the usage of local variables:</p>
+    <pre><code class="language-python">
+      def sum(x,y):
+        sum = x + y
+        return sum 
+      print(sum(5, 10))
+    </code></pre>
+  </div>
+  <p>This will produce the following result:</p>
+  <pre><code class="language-powershell">15</code></pre>
+
+  <h3> Python Global Variables</h3>
+<p> Any variable created outside a function can be accessed within any function and so they have global
+ scope.</p>
+ <div class="card-desc">
+    <h4>Example</h4>
+    <p> Following is an example to show the usage of local variables:</p>
+    <pre><code class="language-python">
+      x = 5
+      y = 10
+      def sum():
+        sum = x + y
+        return sum 
+      print(sum())
+    </code></pre>
+  </div>
+  <p>This will produce the following result:</p>
+  <pre><code class="language-powershell">15</code></pre>
+
+  <h3>Constants in Python</h3>
+  <p> Python doesn't have any formally defined constants, However you can indicate a variable to be treated
+ as a constant by using all-caps names with underscores. For example, the name PI_VALUE indicates
+ that you don't want the variable redefined or changed in any way.</p>
+ <p class="card"> The naming convention using all-caps is sometimes referred to as screaming snake case 
+where the all-caps (screaming) and the underscores (snakes).</p>
 
 
     </section>
