@@ -26,7 +26,7 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
-    <!-- prism -->
+  <!-- prism -->
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.min.css">
@@ -561,14 +561,384 @@
     <div class="pagetitle">
       <h1>Python Numbers</h1>
       <div class="d-flex justify-content-between">
-        <a href="datatypes.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="datatypes.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i>
+          Previous</a>
         <a href="casting.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
       </div>
     </div><!-- End Page Title -->
     <section>
 
-      <p>In Python, numbers are one of the most commonly used data types. They are used to store numeric values like whole numbers, decimals, and even very large mathematical values. Every time you perform calculations, measure values, count items, or work with financial figures, you are using numbers.</p>
+      <p>In Python, numbers are one of the most commonly used data types. They are used to store numeric values like
+        whole numbers, decimals, and even very large mathematical values. Every time you perform calculations, measure
+        values, count items, or work with financial figures, you are using numbers.</p>
+      <p>Python supports different types of numbers, and each type behaves differently. In this section, we will explore
+        everything about Python numbers—from the basics to more advanced features—using simple examples so that
+        beginners, intermediates, and even experts can benefit.</p>
 
+      <hr class="mt-5">
+
+      <h3>What Are Numbers in Python?</h3>
+      <p>Numbers in Python are <b>immutable</b> objects used to store numerical values.</p>
+      <p>Immutable means once a number is created in memory, it cannot be changed—you can only create new ones.</p>
+      <p>Python supports three main types of numeric data:
+      <ul>
+        <li><b>int</b> - integers (whole numbers)</li>
+        <li><b>float</b> - floating point numbers (decimals)</li>
+        <li><b>complex</b> - complex numbers (a + bj)</li>
+      </ul>
+      </p>
+      <p>Python also supports:
+      <ul>
+        <li><b>Booleans</b> (True = 1, False = 0) — a subtype of integers</li>
+        <li><b>Big integers</b> (very large ints without limit except memory)</li>
+        <li><b>Scientific notation</b> for very large or tiny floats</li>
+      </ul>
+      </p>
+      <p>Because Python is a high-level language, it automatically determines the appropriate number type based on the
+        value you assign.</p>
+      <hr class="mt-5">
+      <h3>1. Python Integers (int)</h3>
+      <p>Integers are whole numbers without a decimal point.</p>
+      <p>Examples include:</p>
+      <pre><code class="language-powershell">
+-10
+0
+55
+1492
+99999999999999999999999
+</code></pre>
+
+      <h3>Key Features of Integers</h3>
+      <ul>
+        <li>Can be positive or negative.</li>
+        <li>No length limit (Python handles very large integers automatically).</li>
+        <li>Used for counting, indexing, loops, arithmetic, and more.</li>
+      </ul>
+
+      <h4>Creating Integer Variables</h4>
+      <pre><code class="language-py">
+x = 10
+y = -50
+z = 0
+
+print(type(x))
+print(type(y))
+print(type(z))
+</code></pre>
+
+      <h4>Output</h4>
+      <pre><code class="language-powershell">
+    < class 'int' >
+    < class 'int' >
+    < class 'int' >
+      </code></pre>
+      <h3>Integer Memory Behavior</h3>
+      <p>Each time you create a new integer, Python assigns it a memory location.</p>
+      <p>Integers between -5 and 256 are pre-cached by Python for faster performance.</p>
+      <p>This explains why these numbers may sometimes have the same id().</p> 
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+a = 10
+b = 10
+c = 300
+d = 300
+
+print(id(a), id(b))   # same id
+print(id(c), id(d))   # usually different ids
+</code></pre>
+      </div>
+
+      <hr class="mt-5">
+
+      <h3>2. Python Floats (float)</h3>
+      <p>Floats are numbers with decimal points.</p>
+      <pre><code class="language-py">
+3.14
+0.5
+-10.75
+</code></pre>
+<p>Python stores floats using double-precision (64-bit) floating point format, following the IEEE-754 standard.</p>
+<h4>Creating Floats</h4>
+<pre><code class="language-py">
+x = 10.5
+y = -2.25
+z = 0.0
+
+print(type(x))
+print(type(y))
+print(type(z))
+</code></pre>
+<h4>Scientific Notation</h4>
+<p>Python allows you to write very large or very small numbers using scientific notation with e or E.</p>
+<pre><code class="language-py">
+a = 5e3     # 5 x 10³ = 5000
+b = 2.5e-4  # 2.5 x 10⁻⁴ = 0.00025
+
+print(a)
+print(b)
+</code></pre>
+
+<h4>Floating Point Precision</h4>
+<p>Floats can suffer from rounding issues because they are stored in binary.</p>
+<pre><code class="language-py">print(0.1 + 0.2)</code></pre>
+<h4>Output</h4>
+<pre><code class="language-powershell">0.30000000000000004</code></pre>
+
+<hr class="mt-5">
+
+<h3>3. Python Complex Numbers (complex)</h3>
+<p>Complex numbers consist of:
+  <ul>
+    <li><b>real part</b>, and</li>
+    <li><b>imaginary part</b></li>
+  </ul>
+</p>
+<p>Python uses the letter j to represent the imaginary part.</p>
+<pre><code class="language-py">
+x = 3 + 5j
+y = -2j
+z = 10 - 4j
+</code></pre>
+<h4>Checking type:</h4>
+<pre><code class="language-py">
+print(type(3+5j))     # < class 'complex' >
+</code></pre>
+
+<h4>Accessing real and imaginary parts:</h4>
+<pre><code class="language-py">
+num = 4 + 7j
+
+print(num.real)      # 4.0
+print(num.imag)      # 7.0
+</code></pre>
+
+<h5>Complex Number Operations</h5>
+<pre><code class="language-py">
+a = 2 + 3j
+b = 1 + 4j
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+</code></pre>
+
+<hr class="mt-5">
+
+<h3>4. Type Conversion (Casting Numbers)</h3>
+<p>Python allows converting between number types:</p>
+<h5>int() — Convert to Integer</h5>
+<pre><code class="language-py">
+x = int(10.9)   # becomes 10
+y = int("20")   # becomes 20
+
+print(x, y)
+</code></pre>
+
+<h5>float() — Convert to Float</h5>
+<pre><code class="language-py">
+x = float(10)     # 10.0
+y = float("20.5") # 20.5
+
+print(x, y)
+</code></pre>
+
+<h5>complex() — Convert to Complex</h5>
+<pre><code class="language-py">
+x = complex(10)         # 10+0j
+y = complex(3, 5)       # 3+5j
+
+print(x, y)
+</code></pre>
+
+<hr class="mt-5">
+
+<h3>5. Number Operators in Python</h3>
+<p>Python supports many arithmetic operations.</p>
+<h5>Basic Arithmetic</h5>
+<table class="table">
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>Addition</td>
+    <td>10 + 5 = 15</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>Subtraction</td>
+    <td>10 - 5 = 5</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>Multiplication</td>
+    <td>10 * 5 = 50</td>
+  </tr>
+  <tr>
+    <td>/</td>
+    <td>Division</td>
+    <td>10 / 5 = 2.0</td>
+  </tr>
+  <tr>
+    <td>//</td>
+    <td>Floor division</td>
+    <td>7 // 2 = 3</td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>Modulus (remainder)</td>
+    <td>7 % 2 = 1</td>
+  </tr>
+  <tr>
+    <td>**</td>
+    <td>Exponent (power)</td>
+    <td>2 ** 3 = 8</td>
+  </tr>
+</table>
+
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+a = 15
+b = 4
+
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a // b)
+print(a % b)
+print(a ** b)
+
+  </code></pre>
+</div>
+
+<hr class="mt-5">
+
+<h3>6. Built-in Number Functions</h3>
+<p>Python provides useful functions for working with numbers.</p>
+<h5>abs() — Absolute Value</h5>
+<pre><code class="language-py">print(abs(-10))   # 10</code></pre>
+<h5>pow() — Exponent</h5>
+<pre><code class="language-py">print(pow(2, 3))  # 8</code></pre>
+<h5>round() — Rounding Numbers</h5>
+<pre><code class="language-py">print(round(3.14159, 2))   # 3.14</code></pre>
+<h5>divmod() — Division + Remainder</h5>
+<pre><code class="language-py">print(divmod(7, 3))   # (2, 1)</code></pre>
+
+<hr class="mt-5">
+
+<h3>7. Random Numbers in Python</h3>
+<p>Python uses the <i>random</i> module to generate pseudo-random values.</p>
+<pre><code class="language-py">
+import random
+
+print(random.random())        # float between 0 and 1
+print(random.randint(1, 10))  # int between 1 and 10
+print(random.choice([1,2,3,4]))
+</code></pre>
+
+<hr class="mt-5">
+
+<h3>8. Complex Number Functions (cmath Module)</h3>
+<p>Python provides a special module for complex math:</p>
+<pre><code class="language-py">
+import cmath
+
+print(cmath.sqrt(-1))   # 1j
+</code></pre>
+
+<h3>9. Checking Number Types</h3>
+<p>Use <i>isinstance()</i> to check types:</p>
+<pre><code class="language-py">
+x = 10
+print(isinstance(x, int))
+
+y = 10.5
+print(isinstance(y, float))
+
+z = 3+2j
+print(isinstance(z, complex))
+</code></pre>
+
+<hr class="mt-5">
+
+<h3>10. Boolean Numbers</h3>
+<p>Booleans are a subset of integers:</p>
+<pre><code class="language-py">
+True  == 1
+False == 0
+</code></pre>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+print(True + True)   # 2
+print(False + 5)     # 5
+  </code></pre>
+</div>
+
+<hr>
+
+<h3>11. Large Integer Handling in Python</h3>
+<p>Python automatically converts large integers to unlimited precision.</p>
+<pre><code class="language-powershell">
+x = 999999999999999999999999
+y = x * x
+
+print(y)
+</code></pre>
+
+<p>This is very useful for cryptography, scientific calculations, and algebraic problems.</p>
+
+<h3>Summary of Number Types</h3>
+<table class="table">
+  <tr>
+    <th>Number Type</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>Whole numbers</td>
+    <td>5, -10, 0</td>
+  </tr>
+  <tr>
+    <td>float</td>
+    <td>Decimal numbers</td>
+    <td>3.14, -0.5</td>
+  </tr>
+  <tr>
+    <td>complex</td>
+    <td>Numbers with real & imaginary parts</td>
+    <td>2+3j</td>
+  </tr>
+  <tr>
+    <td>bool</td>
+    <td>Subtype of int</td>
+    <td>True, False</td>
+  </tr>
+</table>
+
+<hr class="mt-5">
+
+<h3>Conclusion</h3>
+<p>Python Numbers form the backbone of most operations in programming—from simple arithmetic to scientific calculations. In this chapter, we covered:
+  <ul>
+    <li>Number types (int, float, complex)</li>
+    <li>Type conversions</li>
+    <li>Arithmetic operators</li>
+    <li>Built-in number functions</li>
+    <li>Random numbers</li>
+    <li>Boolean behavior</li>
+    <li>Large integers</li>
+    <li>Complex number operations</li>
+  </ul>
+</p>
+<p>With this foundation, you are ready to move into more advanced numeric operations in Python.</p>
 
     </section>
 
@@ -580,7 +950,8 @@
           Page</button>
       </div>
       <div class="">
-        <a href="datatypes.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="datatypes.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i>
+          Previous</a>
         <a href="casting.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
       </div>
     </div>
@@ -609,7 +980,7 @@
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/script.js"></script>
 
-    <!-- prism -->
+  <!-- prism -->
   <script src="../assets/js/prism.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.min.js"></script>
