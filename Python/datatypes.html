@@ -26,7 +26,7 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
-    <!-- prism -->
+  <!-- prism -->
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.min.css">
@@ -561,14 +561,95 @@
     <div class="pagetitle">
       <h1>Python Datatypes</h1>
       <div class="d-flex justify-content-between">
-        <a href="variables.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="variables.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i>
+          Previous</a>
         <a href="numbers.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
       </div>
     </div><!-- End Page Title -->
     <section>
 
-      <h1 id="greeting">Hello</h1>
-      <p>Hello world</p>
+      <p>Python data types represent the <i>kind of value</i> a variable can hold. Every value stored inside a Python
+        variable
+        belongs to a specific data type, and the interpreter uses this type information to determine:
+      <ul>
+        <li>How much memory the object needs</li>
+        <li>What operations can be performed on it</li>
+        <li>How it behaves when used in expressions</li>
+      </ul>
+      </p>
+      <p>In the previous chapter (Python Variables), you learned that variables are simply names pointing to objects
+        stored in memory.</p>
+      <p><b>Each object has a type</b>, and Python automatically assigns this type when the object is created.</p>
+      <hr class="mt-5">
+
+      <h3>Why Data Types Matter</h3>
+      <p>Understanding data types is important because:
+      <ol>
+        <li>They help you store the right kind of data (e.g., numbers vs text).</li>
+        <li>They determine what operations are valid (e.g., you can add two numbers but cannot add a number to a string
+          without conversion).</li>
+        <li>They help avoid TypeErrors.</li>
+        <li>They allow better memory optimization.</li>
+      </ol>
+      </p>
+      <p>Python is a <b>dynamically typed language</b>, meaning:
+      <ul>
+        <li>You do not need to declare the data type manually.</li>
+        <li>Python decides the type automatically when you assign a value.</li>
+      </ul>
+      </p>
+      <div class="card-desc">
+        <h5>Example</h5>
+        <pre><code class="language-python">
+            a = 10       # integer
+            b = 10.5     # float
+            c = "Hello"  # string
+          </code></pre>
+      </div>
+      <p>Behind the scenes, Python stores these values in memory with their respective types.</p>
+      <hr class="mt-5">
+
+      <h3>Built-in Data Types in Python</h3>
+      <p>Python has several built-in data types grouped into categories:</p>
+      <table class="table table-bordered">
+        <tr>
+          <th>Category</th>
+          <th>Data Types</th>
+        </tr>
+        <tr>
+          <td>Text Type</td>
+          <td>str</td>
+        </tr>
+        <tr>
+          <td>Numeric Types</td>
+          <td>int, float, complex</td>
+        </tr>
+        <tr>
+          <td>Sequence Types</td>
+          <td>list, tuple, range</td>
+        </tr>
+        <tr>
+          <td>Mapping Type</td>
+          <td>dict</td>
+        </tr>
+        <tr>
+          <td>Set Types</td>
+          <td>set, frozenset</td>
+        </tr>
+        <tr>
+          <td>Boolean Type</td>
+          <td>bool</td>
+        </tr>
+        <tr>
+          <td>Binary Types</td>
+          <td>bytes, bytearray, memoryview</td>
+        </tr>
+        <tr>
+          <td>None Type</td>
+          <td>NoneType</td>
+        </tr>
+      </table>
+
 
 
     </section>
@@ -581,7 +662,8 @@
           Page</button>
       </div>
       <div class="">
-        <a href="variables.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i> Previous</a>
+        <a href="variables.html" class="btn btn-outline-secondary btn-right"><i class="bi bi-chevron-left"></i>
+          Previous</a>
         <a href="numbers.html" class="btn btn-primary btn-right">Next <i class="bi bi-chevron-right"></i></a>
       </div>
     </div>
@@ -610,7 +692,7 @@
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/script.js"></script>
 
-    <!-- prism -->
+  <!-- prism -->
   <script src="../assets/js/prism.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.min.js"></script>
