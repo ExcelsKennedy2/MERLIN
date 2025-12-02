@@ -26,7 +26,7 @@
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
-    <!-- prism -->
+  <!-- prism -->
   <link rel="stylesheet" href="../assets/css/prism.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.css">
   <link rel="stylesheet" href="../assets/css/prism-line-highlight.min.css">
@@ -567,8 +567,365 @@
     </div><!-- End Page Title -->
     <section>
 
-      <h1 id="greeting">Hello</h1>
-      <p>Hello world</p>
+      <p>Tuples are one of Python's most important data types. They look simple, but they play a huge role in how Python
+        works internally. Let's explore <b>everything about tuples</b>, in a clear, structured way.</p>
+      <h3>1. What is a Tuple?</h3>
+      <p>A tuple is an ordered collection of items, similar to a list, but immutable.</p>
+      <h4>Key characteristics of tuples:</h4>
+      <table class="table">
+        <tr>
+          <th>Feature</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <th>Ordered</th>
+          <td>Items keep their position (indexing supported).</td>
+        </tr>
+        <tr>
+          <th>Immutable</th>
+          <td>You <i>cannot </i>change items after creation.</td>
+        </tr>
+        <tr>
+          <th>Allows duplicates</th>
+          <td>Same value can appear multiple times.</td>
+        </tr>
+        <tr>
+          <th>Can store different data types</th>
+          <td>Integers, strings, lists, other tuples, etc.</td>
+        </tr>
+        <tr>
+          <th>Faster than lists</th>
+          <td>Because of immutability.</td>
+        </tr>
+        <tr>
+          <th>Hashable (if items are hashable)</th>
+          <td>Can be used as dictionary keys.</td>
+        </tr>
+      </table>
+
+      <hr class="mt-5">
+
+      <h3>2. Creating Tuples</h3>
+      <p>Tuples are created using <b>parentheses ( )</b> or simply commas.</p>
+      <h5>Basic tuple</h5>
+      <pre><code class="language-py">my_tuple = (10, 20, 30)</code></pre>
+      <h5>Tuple without parentheses(valid)</h5>
+      <pre><code class="language-py">my_tuple = 10, 20, 30</code></pre>
+      <h5>Empty tuple</h5>
+      <pre><code class="language-py">empty_tuple = ()</code></pre>
+      <h5>Single-item tuple (VERY IMPORTANT)</h5>
+      <p>A single value <b>must have a trailing comma</b>, otherwise Python treats it as a normal value.</p>
+      <p>❌ Not a tuple:</p>
+      <pre><code class="language-py">t = (5)     # treated as int</code></pre>
+      <p>✔️ Correct:</p>
+      <pre><code class="language-py">t = (5,)</code></pre>
+      </p>
+      <p>✔️ Also correct:</p>
+      <pre><code class="language-py">t = 5,</code></pre>
+
+      <hr class="mt-5">
+
+      <h3>3. Tuple Indexing</h3>
+      <p>Tuples are ordered, so we access items using indexes.</p>
+      <h5>Positive indexing</h5>
+      <pre><code class="language-py">
+colors = ("red", "blue", "green")
+print(colors[0])  # red
+print(colors[2])  # green
+      </code></pre>
+
+      <h5>Negative indexing</h5>
+      print(colors[-1]) # green
+      print(colors[-2]) # blue
+
+      <hr>
+
+      <h3>4. Tuple Slicing</h3>
+      <p>You can extract a portion of a tuple using slicing.</p>
+      <pre><code class="language-py">
+numbers = (0, 1, 2, 3, 4, 5)
+print(numbers[1:4])   # (1, 2, 3)
+print(numbers[:3])    # (0, 1, 2)
+print(numbers[::2])   # (0, 2, 4)
+      </code></pre>
+      <hr class="mt-5">
+
+      <h3>5. Tuple Immutability</h3>
+      <p>Tuples <b>cannot</b> be modified after creation.</p>
+      <h5>❌ Cannot do:</h5>
+      <pre><code class="language-python">
+t = (1, 2, 3)
+t[1] = 10  # ERROR!     
+      </code></pre>
+      <h5>❗ But you can create a new tuple from an existing one:</h5>
+      <pre><code class="language-python">
+t = (1, 2, 3)
+new_t = t + (4, 5)
+print(new_t)   # (1, 2, 3, 4, 5)
+      </code></pre>
+
+      <hr class="mt-5">
+
+      <h3>6. Why Use Tuples Instead of Lists?</h3>
+      <table class="table">
+        <tr>
+          <th>Feature</th>
+          <th>List</th>
+          <th>Tuple</th>
+        </tr>
+        <tr>
+          <td>Mutable</td>
+          <td>✔️ Yes</td>
+          <td>❌ No</td>
+        </tr>
+        <tr>
+          <td>Faster</td>
+          <td>❌ No</td>
+          <td>✔️ Yes</td>
+        </tr>
+        <tr>
+          <td>Memory usage</td>
+          <td>More</td>
+          <td>Less</td>
+        </tr>
+        <tr>
+          <td>Hashable</td>
+          <td>No</td>
+          <td>Yes (if elements are hashable)</td>
+        </tr>
+        <tr>
+          <td>Suitable for constants</td>
+          <td>Not ideal</td>
+          <td>✔️ Perfect</td>
+        </tr>
+      </table>
+
+      <div class="card">
+        <p><b>Use tuple when the data should not change</b>, e.g., days of the week</p>
+      </div>
+
+      <hr class="mt-5">
+
+      <h3>7. Tuple Methods</h3>
+      <p>Tuples have only 2 built-in methods:</p>
+      <h5>count() — how many times a value appears</h5>
+      <pre><code class="language-py">
+t = (1, 2, 2, 3)
+print(t.count(2))   # 2
+      </code></pre>
+      <h5>index() — first occurrence of a value</h5>
+      <pre><code class="language-py">
+t = (10, 20, 30, 20)
+print(t.index(20))   # 1
+      </code></pre>
+
+      <hr class="mt-5">
+
+      <h3>8. Tuple Operations</h3>
+      <h5>Concatenation</h5>
+      <pre><code class="language-python">
+a = (1, 2)
+b = (3, 4)
+print(a + b)   # (1, 2, 3, 4)
+      </code></pre>
+
+      <h5>Repetition</h5>
+      <pre><code class="language-py">
+t = ("Hi",)
+print(t * 3)   # ('Hi', 'Hi', 'Hi')
+      </code></pre>
+
+      <h5>Membership test</h5>
+      <pre><code class="language-py">print(2 in (1, 2, 3))  # True</code></pre>
+
+      <hr class="mt-5">
+
+      <h3>9. Iterating Through Tuples</h3>
+      <h5>Using a for-loop</h5>
+      <pre><code class="language-python">
+t = ("apple", "banana", "cherry")
+for item in t:
+    print(item)
+      </code></pre>
+
+      <hr class="mt-5">
+
+      <h3>10. Tuple Packing & Unpacking</h3>
+      <h5>Packing</h5>
+      <p>Grouping values into a tuple:</p>
+      <pre><code class="language-py">student = ("Kennedy", 22, "Kenya")</code></pre>
+      <h5>Unpacking</h5>
+      <p>Extracting values:</p>
+      <pre><code class="language-powershell">name, age, country = student</code></pre>
+      <h5>Extended unpacking</h5>
+      <pre><code class="language-python">
+nums = (1, 2, 3, 4, 5)
+a, b, *rest = nums
+# a = 1, b = 2, rest = [3, 4, 5]
+      </code></pre>
+
+      <hr class="mt-5">
+
+      <h3>11. Nested Tuples</h3>
+      <p>Tuples can contain other tuples.</p>
+      <pre><code class="language-py">
+nested = (1, (2, 3), (4, (5, 6)))
+      </code></pre>
+      <p>Accessing:</p>
+      <pre><code class="language-py">
+print(nested[1][0])     # 2
+print(nested[2][1][1])  # 6
+      </code></pre>
+
+      <hr class="mt-5">
+
+      <h3>12. Tuple vs List (Deep Comparison)</h3>
+      <h5>Why tuples are faster</h5>
+      <ul>
+        <li>Stored in fixed <b>memory blocks</b>.</li>
+        <li>Python doesn't need to allocate memory for resizing.</li>
+        <li>Allows Python optimizations like <b>interning</b>.</li>
+      </ul>
+      <hr class="mt-5">
+
+      <h3>13. Converting Between List & Tuple</h3>
+      <h5>✔️ List → Tuple</h5>
+      <pre><code class="language-py">
+l = [1, 2, 3]
+t = tuple(l)
+      </code></pre>
+      <h5>✔️ Tuple → List</h5>
+      <pre><code class="language-py">
+t = (1, 2, 3)
+l = list(t)
+print(l)   # [1, 2, 3]
+      </code></pre>
+
+      <h3>14. Tuples as Dictionary Keys</h3>
+      <p>Lists cannot be dictionary keys, but tuples <b>can</b>:</p>
+      <pre><code class="language-python">
+location = {}
+location[(0, 1)] = "Player Position"
+location[(2, 3)] = "Enemy Position"
+print(location)
+      </code></pre>
+
+      <hr class="mt-5">
+
+      <h3>15. Tuples in Functions</h3>
+      <p>Functions can return multiple values as tuples:</p>
+      <pre><code class="language-py">
+def stats(a, b):
+    return a + b, a * b
+
+s, p = stats(4, 5)
+print(s)  # 9
+print(p)  # 20
+      </code></pre>
+
+      <h3>16. Tuple Comprehension?</h3>
+      <p>Tuples <b>do not</b> have comprehensions.</p>
+      <p>But you can create a <b>generator</b> and convert to tuple:</p>
+      <pre><code class="language-py">t = tuple(x for x in range(5))</code></pre>
+
+      <hr class="mt-5">
+      <h3>17. Advanced: Tuple Internals</h3>
+      <p>(Short but useful)</p>
+      <ul>
+        <li>Tuples store references to objects, not actual objects.</li>
+        <li>They are stored in contiguous memory blocks.</li>
+        <li>They are hashable only if all their elements are hashable:</li>
+        <ul>
+          <li>(1, 2, 3) ✔️ hashable</li>
+          <li>([1, 2], 3) ❌ not hashable</li>
+        </ul>
+      </ul>
+
+      <hr class="mt-5">
+
+      <h3>18. Common Beginner Mistakes</h3>
+      <h5>❌ Missing comma in single-element tuple</h5>
+      <pre><code class="language-py">t = (5)   # int</code></pre>
+      <h5>❌ Trying to modify a tuple</h5>
+      <pre><code class="language-py">t = (1, 2, 3)
+t[0] = 10   # ERROR!</code></pre>
+      <h5>❌ Confusing tuples with lists</h5>
+      <pre><code class="language-py">t = [1, 2, 3]   # This is a list, not a tuple</code></pre>
+      <h5>❌ Thinking tuples are faster for all operations</h5>
+      <p>Tuples are faster for:</p>
+      <ul>
+        <li>iteration</li>
+        <li>fixed data</li>
+        <li>hashing</li>
+      </ul>
+      <p>But <b>not</b> faster for:
+      <ul>
+        <li>searching</li>
+        <li>modifying (since impossible)</li>
+      </ul></p>
+
+      <hr class="mt-5">
+
+      <h3>19. Real-World Uses of Tuples</h3>
+      <ul>
+        <li>Storing fixed collections of data (e.g., coordinates, RGB colors).</li>
+        <li>Returning multiple values from functions.</li>
+        <li>Using as dictionary keys for composite keys.</li>
+        <li>Data integrity: ensuring data doesn't change.</li>
+        <li>Performance optimization in large datasets.</li>
+      </ul>
+
+      <h3>20. Summary Table</h3>
+      <table class="table">
+        <tr>
+          <th>Feature</th>
+          <th>Tuple</th>
+        </tr>
+        <tr>
+          <td>Ordered</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <td>Immutable</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <td>Allows duplicates</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <td>Indexing</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <td>Slicing</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <td>Hashable</td>
+          <td>✔️ (if contents are hashable)</td>
+        </tr>
+        <tr>
+          <td>Faster than list</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <td>Real-world usage</td>
+          <td>Coordinates, configs, DB data</td>
+        </tr>
+      </table>
+
+      
+
+
+
+
+
+
+
+
+
+
 
 
     </section>
@@ -610,7 +967,7 @@
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/script.js"></script>
 
-    <!-- prism -->
+  <!-- prism -->
   <script src="../assets/js/prism.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.js"></script>
   <script src="../assets/js/prism-copy-to-clipboard.min.js"></script>
