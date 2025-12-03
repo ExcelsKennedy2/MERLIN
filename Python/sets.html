@@ -566,13 +566,65 @@
       </div>
     </div><!-- End Page Title -->
     <section>
-        <p>In Python, a set is an unordered collection of unique elements. Unlike lists or tuples, sets do not allow duplicate values i.e. each element in a set must be unique. Sets are mutable, meaning you can add or remove items after a set has been created.</p>
-        <p>Sets are defined using curly braces {} or the built-in set() function. They are particularly useful for membership testing, removing duplicates from a sequence, and performing common mathematical set operations like union, intersection, and difference.</p>
-        <p class="card">A set refers to a collection of distinct objects. It is used to group objects together and to study their properties and relationships. The objects in a set are called elements or members of the set.</p>
+      <p>In Python, a Set is one of the four built-in data types used to store numerous items in a single variable. Set is an unindexed and unordered collection of unique elements. For example, a set is suitable option when storing information about employee IDs as these IDs cannot have duplicates.</p>
+      <img src="../Python/images/sets-1.png" alt="sets" class="img-fluid">
+      <p>Let us take a look at a simple example of a set.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+# creating a Set      
+S = {202, 205, 204, 209, 207}  
+  
+print(S)  
+        </code></pre>
+      </div>
 
-        <h3>Creating a Set in Python</h3>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">{209, 202, 204, 205, 207}</code></pre>
+      <p>In the above example, we have created a simple set consisting of multiple items. Here, we can see that the items in the initialized set are unordered.</p>
+      <p>A set is a mutable data type, meaning we can remove or add data elements to it. Python Sets are similar to the sets in mathematics, where we can perform operations like intersection, union, symmetric difference, and more.</p>
 
-    </section>
+      <h3>Characteristics of Python Sets</h3>
+      <p>Set in <a href="../Python/home.html">Python</a> is a <a href="../Python/datatypes.html">data type</a>, which is:</p>
+      <ul>
+        <li><b>Unordered: </b>Sets do not maintain the order of how elements are stored in them.</li>
+        <li><b>Unindexed:</b> We cannot access the data elements of sets.</li>
+        <li><b>No Duplicate Elements:</b> Each data element in a set is unique.</li>
+        <li><b>Mutable (Changeable):</b> Sets in Python allow modification of their elements after creation.</li>
+      </ul>
+
+      <h3>Creating a Set</h3>
+      <p>Creating a set in Python is quite simple and easy process. Python offers two ways to create a set:</p>
+      <ol>
+        <li>Using curly braces</li>
+        <li>Using set() function</li>
+      </ol>
+
+      <h3>Using Curly Braces</h3>
+      <p>A set can be created by enclosing elements within curly braces '{}', separated by commas.</p>
+      <p>Let us see a simple example showing the way of creating a set using curly braces.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+# simple example to create a set using curly braces  
+  
+int_set = {12, 6, 7, 9, 11, 10}   # set of integers  
+print(int_set)  
+  
+str_set = {'one', 'two', 'three', 'four', 'five'} # set of strings  
+print(str_set)  
+  
+mixed_set = {12, 'tpointtech', 7.2, 6e2} # mixed set  
+print(mixed_set)  
+        </code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
+{6, 7, 9, 10, 11, 12}
+{'one', 'three', 'two', 'four', 'five'}
+{600.0, 'tpointtech', 12, 7.2}
+      </code></pre>
+<p>In this example, we have used the curly braces to create different types of sets. Moreover, we can observe that a set can store any number of items of different types, like integer, float, tuple, string, etc. However, a set cannot store mutable elements like lists, sets, or dictionaries.</p>
 
 
     <!-- ======= Buttons ======= -->
