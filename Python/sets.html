@@ -1132,12 +1132,71 @@ Updated Set: {'juice', 'milk', 'coffee', 'tea'}
 <p>In this example, we have used the discard() method to remove the specified element from the given set.</p>
 
 <h3>5) remove()</h3>
-<p></p>
+<p>The <b>remove()</b> method is utilized to delete the specified element from the set. It will raise an error if the passed element does not exist in the given set.</p>
+<p>Here is the syntax of the remove() method:</p>
+<h5>Syntax:</h5>
+<pre><code class="language-powershell">set_name.remove(item)</code></pre>
+<p>Let us now see the example showing how to use set's remove() method in Python.</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+# python program to show the use of set remove() method  
+  
+# creating a set  
+country_set = {'India', 'Brazil', 'Japan', 'China', 'USA'}  
+# printing the set  
+print("Given Set:", country_set)  
+  
+# using the remove() method  
+country_set.remove('China')  
+  
+# printing the updated set  
+print("Updated Set:", country_set) 
+  </code></pre>
+</div>
 
+<h5>Output:</h5>
+<pre><code class="language-powershell">
+Given Set: {'Brazil', 'China', 'India', 'Japan', 'USA'}
+Updated Set: {'Brazil', 'India', 'Japan', 'USA'}
+</code></pre>
 
+<p>In the above example, we have used the remove() method to remove the specified element from the given set.</p>
 
+<h3>6) pop()</h3>
+<p>Python set <b>pop()</b> method allows us to remove any random element from the set. This method returns the removed element.</p>
+<p>The syntax of the pop() method is shown below:</p>
+<h5>Syntax:</h5>
+<pre><code class="language-powershell">set_name.pop()</code></pre>
+<p>We will now look at a simple example showing the implementation of set's pop() method in Python.</p>
 
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+# python program to show the use of set pop() method  
+  
+# creating a set  
+state_set = {'New York', 'Delhi', 'Tokyo', 'Penang', 'Ontario'}  
+# printing the set  
+print("Given Set:", state_set)  
+  
+# using the pop() method  
+popped_item = state_set.pop()  
+  
+# printing the updated set  
+print("Updated Set:", state_set)  
+print("Popped Element:", popped_item)  
+  </code></pre>
+</div>
 
+<h5>Output:</h5>
+<pre><code class="language-powershell">
+Given Set: {'Penang', 'Ontario', 'Tokyo', 'New York', 'Delhi'}
+Updated Set: {'Ontario', 'Tokyo', 'New York', 'Delhi'}
+Popped Element: Penang
+</code></pre>
+
+<p>In the above example, we have used the pop() method to remove and return a random element from the given set.</p>
 
     </section>
 
