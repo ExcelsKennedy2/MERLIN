@@ -734,7 +734,51 @@ Update Set (Added Multiple elements): {'physics', 'chemistry', 'english', 'biolo
 <p>In this example, we have given a set consisting of 3 elements. We have then used the add() method to add a new element to the set. We have also used the update() method to add multiple elements to the given set.</p>
 
 <h3>Removing Elements from the Set</h3>
+<p>In Python, we can easily remove elements from a given set using methods like remove(), discard(), pop(), and clear().</p>
+<ul>
+  <li><b>remove():</b> This method allow us to remove a specific element from the set. It will raise a KeyError if the element is not found in the given set.</li>
+  <li><b>discard():</b> This method is also used to remove a specified element from the set; however, it does not raise any error if the element is not found.</li>
+  <li><b>pop()</b>: This method is used to remove and returns a random element from the set.</li>
+</ul>
+<p>Here is a simple example showing the working of these methods to remove elements from a set in Python.</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+# simple example to show how to remove elements from the set  
+  
+# given set  
+subjects = {'physics', 'chemistry', 'english', 'biology', 'computer', 'maths'}  
+print("Given Set:", subjects)  
+  
+# removing a specified element from the set  
+subjects.remove('maths')      # using remove()  
+print("Updated Set (Removed 'maths'):", subjects)  
+  
+# removing a specified element from the set  
+subjects.discard('chemistry')      # using discard()  
+print("Updated Set (Removed 'chemistry'):", subjects)  
+  
+# removing a random element from the set  
+subjects.pop()      # using pop()  
+print("Updated Set (Removed a random element'):", subjects)  
+  
+# removing all elements from the set  
+subjects.clear()      # using clear()  
+print("Updated Set (Removed all elements):", subjects)  
+  </code></pre>
+</div>
 
+<h5>Output:</h5>
+<pre><code class="powershell">
+Given Set: {'physics', 'chemistry', 'english', 'computer', 'biology', 'maths'}
+Updated Set (Removed 'maths'): {'physics', 'chemistry', 'english', 'computer', 'biology'}
+Updated Set (Removed 'chemistry'): {'physics', 'english', 'computer', 'biology'}
+Updated Set (Removed a random element'): {'english', 'computer', 'biology'}
+Updated Set (Removed all elements): set()
+</code></pre>
+<p>In this example, we have given a set consisting of six elements. We have then used the remove(), and discard() methods to remove the specified elements from the set. We have then used the pop() method to remove a random element from the set. At last, we have used the clear() method to remove all the elements from the given set. As a result, the set becomes empty.</p>
+
+<h3>Set Operations in Python</h3>
 
 
 
