@@ -913,12 +913,12 @@ Method 2: {4, 5}
       <p>In the above example, we have defined two sets and performed their difference using the - operator and
         difference() method.</p>
 
-<h3>Set Comprehension</h3>
-<p>In Python, set comprehension allows us to create sets in a concise and easy way.</p>
-<p>The following example demonstrates how set comprehension works in Python:</p>
-<div class="card-desc">
-  <h4>Example:</h4>
-  <pre><code class="language-py">
+      <h3>Set Comprehension</h3>
+      <p>In Python, set comprehension allows us to create sets in a concise and easy way.</p>
+      <p>The following example demonstrates how set comprehension works in Python:</p>
+      <div class="card-desc">
+        <h4>Example:</h4>
+        <pre><code class="language-py">
 # simple example on set comprehension  
   
 # creating a set of square of numbers  
@@ -929,19 +929,159 @@ print(set_of_squares)
 set_of_cubes = {i**3 for i in range(6)}  
 print(set_of_cubes) 
   </code></pre>
-</div>
+      </div>
 
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 {0, 1, 4, 9, 16, 25}
 {0, 1, 64, 8, 27, 125}
 </code></pre>
 
-<p>In the above example, we have used the set comprehension to create the desired set.</p>
+      <p>In the above example, we have used the set comprehension to create the desired set.</p>
 
-<hr class="mt-5">
+      <hr class="mt-5">
 
-<h3>Frozenset in Python</h3>
+      <h3>Frozenset in Python</h3>
+      <p>A frozenset is an immutable version of a set, meaning we cannot add or remove elements from it once created. We
+        can create a frozeset object using Python's built-in function called frozenset().</p>
+      <p>Let us see a simple example showing how to create a frozenset in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+# simple example to create a frozenset  
+  
+# using the frozenset() function  
+imm_set = frozenset(['one', 'two', 'three', 'four', 'five'])  
+  
+# printing results  
+print(imm_set)  
+print(type(imm_set))  # returning type  
+          </code></pre>
+      </div>
+      <h5>Output</h5>
+      <pre><code class="language-powershell">
+frozenset({'two', 'one', 'five', 'four', 'three'})
+< class 'frozenset' >
+</code></pre>
+      <p>In the above example, we have used the frozenset() function to return the frozenset object of the passed
+        iterable.</p>
+      <p>Frozensets are hashable objects that can be used as keys in dictionaries or elements of other sets.</p>
+      <hr class="my-5">
+      <h3>Python Set Methods</h3>
+      <p>In Python, <b>set methods</b> are used to manipulate the data of a set in an effective and efficient way. These
+        methods allow us to add, remove, and update the elements of sets. Sets in Python, is an unordered and mutable
+        data type allowing us to store a collection of unique objects in a single variable.</p>
+      <p>Let us take a look at various Set methods available in Python.</p>
+      <table class="table table-bordered table-striped">
+        <tr>
+          <th>Method</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <th>add()</th>
+          <td>This method is utilized to add a data element to the set.</td>
+        </tr>
+        <tr>
+          <th>clear()</th>
+          <td>This method is utilized to remove all data elements from the set.</td>
+        </tr>
+        <tr>
+          <th>copy()</th>
+          <td>This method is used to return a shallow copy of the set.</td>
+        </tr>
+        <tr>
+          <th>discard()</th>
+          <td>This method is used to remove a data element if it is a member. It will not return any error if the
+            specified element is not found in the set.</td>
+        </tr>
+        <tr>
+          <th>remove()</th>
+          <td>This method is utilized to remove a data element from the given set; however, it raises a KeyError if the
+            specified element is not found.</td>
+        </tr>
+        <tr>
+          <th>pop()</th>
+          <td>This method is used to remove and return an arbitrary element.</td>
+        </tr>
+        <tr>
+          <th>update()</th>
+          <td>This method is utilized to add elements from other sets or iterables.</td>
+        </tr>
+      </table>
+
+      <h3>1) add()</h3>
+      <p>The <b>add()</b> method is used to add a new element to a set while ensuring uniqueness. If the passed element already exists, the set remains unchanged.</p>
+      <p>The syntax of the add() method is shown below:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">set_name.add(item)</code></pre>
+      <p>We will now look at a simple example showing the use case of set's add() method in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+# python program to show the use of set add() method    
+    
+# creating a set    
+set_of_fruits = {'apple', 'mango', 'banana', 'orange', 'guava'}  
+# printing the set  
+print("Set of Fruits:", set_of_fruits)    
+    
+# using the add() method    
+set_of_fruits.add('grapes')  
+    
+# printing the updated set    
+print("Updated Set of Fruits:", set_of_fruits)
+        </code></pre>
+      </div>
+<h5>Output:</h5>
+<pre><code class="language-powershell">
+Set of Fruits: {'banana', 'orange', 'apple', 'guava', 'mango'}
+Updated Set of Fruits: {'banana', 'orange', 'apple', 'guava', 'mango', 'grapes'}
+</code></pre>
+<p>In the above example, we have used the add() method to add a new element 'grapes' to the given set.</p>
+
+<h3>2) clear()</h3>
+<p>The <b>clear()</b> method is utilized to remove all the elements from the given set.</p>
+<p>The following is the syntax of the clear() method:</p>
+<h5>Syntax:</h5>
+<pre><code class="language-powershell">set_name.clear()</code></pre>
+<p>We will now look at an example to understand the working of set's clear() method in Python.</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+# python program to show the use of set clear() method    
+    
+# creating a set  
+game_set = {'football', 'cricket', 'volleyball', 'basketball', 'hockey'}  
+# printing the set  
+print("Given Set:", game_set)  
+  
+# using the clear() method  
+game_set.clear()  
+  
+# printing the updated set    
+print("Updated Set:", game_set)  
+  </code></pre>
+</div>
+
+<h5>Output:</h5>
+<pre><code class="language-powershell">
+Given Set: {'basketball', 'hockey', 'football', 'cricket', 'volleyball'}
+Updated Set: set()
+</code></pre>
+<p>In the above example, we have used the clear() method to remove all the elements from the given set.</p>
+
+<h3>3) copy()</h3>
+<p>The <b>copy()</b> method is used to return a shallow copy of the set in Python.</p>
+<p>Here is the syntax of the copy() method:</p>
+<h5>Syntax:</h5>
+<pre><code class="language-powershell">set_name.copy()</code></pre>
+<p>We will now see an example showing the use of set's copy() method in Python.</p>
+
+
+
+
+
+
 
 
 
