@@ -1010,7 +1010,8 @@ frozenset({'two', 'one', 'five', 'four', 'three'})
       </table>
 
       <h3>1) add()</h3>
-      <p>The <b>add()</b> method is used to add a new element to a set while ensuring uniqueness. If the passed element already exists, the set remains unchanged.</p>
+      <p>The <b>add()</b> method is used to add a new element to a set while ensuring uniqueness. If the passed element
+        already exists, the set remains unchanged.</p>
       <p>The syntax of the add() method is shown below:</p>
       <h5>Syntax:</h5>
       <pre><code class="language-powershell">set_name.add(item)</code></pre>
@@ -1032,22 +1033,22 @@ set_of_fruits.add('grapes')
 print("Updated Set of Fruits:", set_of_fruits)
         </code></pre>
       </div>
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 Set of Fruits: {'banana', 'orange', 'apple', 'guava', 'mango'}
 Updated Set of Fruits: {'banana', 'orange', 'apple', 'guava', 'mango', 'grapes'}
 </code></pre>
-<p>In the above example, we have used the add() method to add a new element 'grapes' to the given set.</p>
+      <p>In the above example, we have used the add() method to add a new element 'grapes' to the given set.</p>
 
-<h3>2) clear()</h3>
-<p>The <b>clear()</b> method is utilized to remove all the elements from the given set.</p>
-<p>The following is the syntax of the clear() method:</p>
-<h5>Syntax:</h5>
-<pre><code class="language-powershell">set_name.clear()</code></pre>
-<p>We will now look at an example to understand the working of set's clear() method in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py">
+      <h3>2) clear()</h3>
+      <p>The <b>clear()</b> method is utilized to remove all the elements from the given set.</p>
+      <p>The following is the syntax of the clear() method:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">set_name.clear()</code></pre>
+      <p>We will now look at an example to understand the working of set's clear() method in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
 # python program to show the use of set clear() method    
     
 # creating a set  
@@ -1061,24 +1062,24 @@ game_set.clear()
 # printing the updated set    
 print("Updated Set:", game_set)  
   </code></pre>
-</div>
+      </div>
 
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 Given Set: {'basketball', 'hockey', 'football', 'cricket', 'volleyball'}
 Updated Set: set()
 </code></pre>
-<p>In the above example, we have used the clear() method to remove all the elements from the given set.</p>
+      <p>In the above example, we have used the clear() method to remove all the elements from the given set.</p>
 
-<h3>3) copy()</h3>
-<p>The <b>copy()</b> method is used to return a shallow copy of the set in Python.</p>
-<p>Here is the syntax of the copy() method:</p>
-<h5>Syntax:</h5>
-<pre><code class="language-powershell">set_name.copy()</code></pre>
-<p>We will now see an example showing the use of set's copy() method in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py">
+      <h3>3) copy()</h3>
+      <p>The <b>copy()</b> method is used to return a shallow copy of the set in Python.</p>
+      <p>Here is the syntax of the copy() method:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">set_name.copy()</code></pre>
+      <p>We will now see an example showing the use of set's copy() method in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
 # python program to show the use of set copy() method    
     
 # creating a set  
@@ -1092,23 +1093,24 @@ dummy_set = vegetable_set.copy()
 # printing the updated set    
 print("Dummy Set:", dummy_set)  
   </code></pre>
-</div>
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 Given Set: {'potato', 'tomato', 'broccoli', 'eggplant', 'cabbage'}
 Dummy Set: {'potato', 'tomato', 'broccoli', 'eggplant', 'cabbage'}
 </code></pre>
-<p>In this example, we have used the copy() method to create a shallow copy of the given set.</p>
+      <p>In this example, we have used the copy() method to create a shallow copy of the given set.</p>
 
-<h3>4) discard()</h3>
-<p>The <b>discard()</b> method is utilized to remove the elements from the set. This method does not return any error in case the particular element is not found in the given set.</p>
-<p>The following is the syntax of the discard() method:</p>
-<h5>Syntax:</h5>
-<pre><code class="language-powershell">set_name.discard(item)</code></pre>
-<p>We will now look at a simple example showing the usage of set's discard() method in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py">
+      <h3>4) discard()</h3>
+      <p>The <b>discard()</b> method is utilized to remove the elements from the set. This method does not return any
+        error in case the particular element is not found in the given set.</p>
+      <p>The following is the syntax of the discard() method:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">set_name.discard(item)</code></pre>
+      <p>We will now look at a simple example showing the usage of set's discard() method in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
 # python program to show the use of set discard() method    
     
 # creating a set  
@@ -1122,24 +1124,25 @@ beverage_set.discard('soda')
 # printing the updated set  
 print("Updated Set:", beverage_set)  
   </code></pre>
-</div>
+      </div>
 
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 Given Set: {'juice', 'milk', 'coffee', 'tea', 'soda'}
 Updated Set: {'juice', 'milk', 'coffee', 'tea'}
 </code></pre>
-<p>In this example, we have used the discard() method to remove the specified element from the given set.</p>
+      <p>In this example, we have used the discard() method to remove the specified element from the given set.</p>
 
-<h3>5) remove()</h3>
-<p>The <b>remove()</b> method is utilized to delete the specified element from the set. It will raise an error if the passed element does not exist in the given set.</p>
-<p>Here is the syntax of the remove() method:</p>
-<h5>Syntax:</h5>
-<pre><code class="language-powershell">set_name.remove(item)</code></pre>
-<p>Let us now see the example showing how to use set's remove() method in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py">
+      <h3>5) remove()</h3>
+      <p>The <b>remove()</b> method is utilized to delete the specified element from the set. It will raise an error if
+        the passed element does not exist in the given set.</p>
+      <p>Here is the syntax of the remove() method:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">set_name.remove(item)</code></pre>
+      <p>Let us now see the example showing how to use set's remove() method in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
 # python program to show the use of set remove() method  
   
 # creating a set  
@@ -1153,26 +1156,27 @@ country_set.remove('China')
 # printing the updated set  
 print("Updated Set:", country_set) 
   </code></pre>
-</div>
+      </div>
 
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 Given Set: {'Brazil', 'China', 'India', 'Japan', 'USA'}
 Updated Set: {'Brazil', 'India', 'Japan', 'USA'}
 </code></pre>
 
-<p>In the above example, we have used the remove() method to remove the specified element from the given set.</p>
+      <p>In the above example, we have used the remove() method to remove the specified element from the given set.</p>
 
-<h3>6) pop()</h3>
-<p>Python set <b>pop()</b> method allows us to remove any random element from the set. This method returns the removed element.</p>
-<p>The syntax of the pop() method is shown below:</p>
-<h5>Syntax:</h5>
-<pre><code class="language-powershell">set_name.pop()</code></pre>
-<p>We will now look at a simple example showing the implementation of set's pop() method in Python.</p>
+      <h3>6) pop()</h3>
+      <p>Python set <b>pop()</b> method allows us to remove any random element from the set. This method returns the
+        removed element.</p>
+      <p>The syntax of the pop() method is shown below:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">set_name.pop()</code></pre>
+      <p>We will now look at a simple example showing the implementation of set's pop() method in Python.</p>
 
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py">
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
 # python program to show the use of set pop() method  
   
 # creating a set  
@@ -1187,16 +1191,118 @@ popped_item = state_set.pop()
 print("Updated Set:", state_set)  
 print("Popped Element:", popped_item)  
   </code></pre>
-</div>
+      </div>
 
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 Given Set: {'Penang', 'Ontario', 'Tokyo', 'New York', 'Delhi'}
 Updated Set: {'Ontario', 'Tokyo', 'New York', 'Delhi'}
 Popped Element: Penang
 </code></pre>
 
-<p>In the above example, we have used the pop() method to remove and return a random element from the given set.</p>
+      <p>In the above example, we have used the pop() method to remove and return a random element from the given set.
+      </p>
+
+      <h3>7) update()</h3>
+      <p>Python set update() method is used to add elements from another set, list, tuple, or any other iterable to the
+        set. Since sets are collections of unique elements, the update() method will only add the unique elements from
+        the specified iterable to the targeted set.</p>
+      <p>The following is the syntax of the update() method:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">set_name.update(*others)</code></pre>
+      <p>We will now look at a simple example showing the use case of set's update() method in Python.</p>
+
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+# python program to show the use of set update() method  
+  
+# given sets  
+num_set_1 = {4, 7, 8, 11, 19}  
+num_set_2 = {2, 5, 7, 8, 10}  
+print("Set 1:", num_set_1)  
+print("Set 2:", num_set_2)  
+  
+# using the update() method  
+num_set_1.update(num_set_2)  
+  
+# printing the updated set  
+print("Updated Set:", num_set_1) 
+          </code></pre>
+      </div>
+
+      <h5>Output</h5>
+      <pre><code class="language-powershell">
+Set 1: {19, 4, 7, 8, 11}
+Set 2: {2, 5, 7, 8, 10}
+Updated Set: {2, 4, 5, 7, 8, 10, 11, 19}
+        </code></pre>
+      <p>Here, we have used the update() method to add the elements from the second set to the first set. As a result,
+        only the unique elements are added to the set.</p>
+
+      <h3>Set Operation Methods in Python</h3>
+      <p>In order to perform set operations like union, intersection, difference, and symmetric difference, there are
+        various set methods available in Python.</p>
+      <p>These methods to perform set operations are as follows:</p>
+      <table class="table table-bordered table-striped">
+        <tr>
+          <th class="bg-dark text-white">Method</th>
+          <th class="bg-dark text-white">Description</th>
+        </tr>
+        <tr>
+          <th>union()</th>
+          <td>This method is utilized to return a set with elements from the set and all others.</td>
+        </tr>
+        <tr>
+          <th>intersection()</th>
+          <td>This method is utilized to return a set with common elements.</td>
+        </tr>
+        <tr>
+          <th>difference()</th>
+          <td>This method returns elements only in the set but not in others.</td>
+        </tr>
+        <tr>
+          <th>symmetric_difference()</th>
+          <td>This method returns elements in either set but not both.</td>
+        </tr>
+        <tr>
+          <th>intersection_update()</th>
+          <td>This method allows us to update the set with intersection.</td>
+        </tr>
+        <tr>
+          <th>difference_update()</th>
+          <td>This method is used to update the set with differences.</td>
+        </tr>
+        <tr>
+          <th>symmetric_difference_update()</th>
+          <td>This method updates the set with symmetric differences.</td>
+        </tr>
+        <tr>
+          <th>issubset()</th>
+          <td>This method allows us to check if the set is a subset.</td>
+        </tr>
+        <tr>
+          <th>issuperset()</th>
+          <td>This method is used to check if the set is a superset.</td>
+        </tr>
+        <tr>
+          <th>isdisjoint()</th>
+          <td>This method checks if sets have no elements in common.</td>
+        </tr>
+      </table>
+
+      <p>Let us see an example showing the use of some commonly used methods to perform set operations in Python.</p>
+
+
+
+
+
+
+
+
+
+
+
 
     </section>
 
