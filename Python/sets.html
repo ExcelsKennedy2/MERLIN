@@ -1292,6 +1292,47 @@ Updated Set: {2, 4, 5, 7, 8, 10, 11, 19}
       </table>
 
       <p>Let us see an example showing the use of some commonly used methods to perform set operations in Python.</p>
+      <div class="card-desc">
+        <h4>Examples</h4>
+        <pre><code class="language-python">
+# simple python program to see the use of set operation methods  
+  
+# given sets  
+set_A = {3, 6, 7, 9, 12}  
+set_B = {1, 2, 6, 7, 10}  
+print("Set A:", set_A)  
+print("Set B:", set_B)  
+print()  
+# union  
+union_set = set_A.union(set_B)  
+print("Union:", union_set)  
+  
+# intersection  
+inters_set = set_A.intersection(set_B)  
+print("Intersection:", inters_set)  
+  
+# difference  
+diff_set = set_A.difference(set_B)  
+print("Difference (set_A - set_B):", diff_set)  
+  
+# symmetric difference  
+sym_diff_set = set_A.symmetric_difference(set_B)  
+print("Symmetric Difference:", sym_diff_set)  
+        </code></pre>
+      </div>
+
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
+Set A: {3, 6, 7, 9, 12}
+Set B: {1, 2, 6, 7, 10}
+
+Union: {1, 2, 3, 6, 7, 9, 10, 12}
+Intersection: {6, 7}
+Difference (set_A - set_B): {9, 3, 12}
+Symmetric Difference: {1, 2, 3, 9, 10, 12}
+      </code></pre>
+      <p>In this example, we have performed set operations like union, intersection, difference, and symmetric
+        difference using the set methods that Python offered us.</p>
 
 
 
