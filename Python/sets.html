@@ -668,11 +668,12 @@ Set 2: set()</code></pre>
         in Python.</p>
 
       <h3>Accessing Elements of a Set</h3>
-      <p>Since sets are unordered and unindexed, we cannot access the elements by position. However, we can iterate through a set with the help of loops.</p>
-<p>Let us see a simple example showing the way of iterating through a set in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py">
+      <p>Since sets are unordered and unindexed, we cannot access the elements by position. However, we can iterate
+        through a set with the help of loops.</p>
+      <p>Let us see a simple example showing the way of iterating through a set in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
 # simple example to show how to iterate through a set  
   
 # given set  
@@ -684,10 +685,10 @@ print("Iterating through the Set:")
 for num in set_one:  
   print(num)  
   </code></pre>
-</div>
+      </div>
 
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 Given Set: {17, 5, 7, 8, 11, 12}
 Iterating through the Set:
 17
@@ -697,18 +698,18 @@ Iterating through the Set:
 11
 12
 </code></pre>
-<p>In this example, we have used the 'for' loop to iterate through the elements of the given set.</p>
+      <p>In this example, we have used the 'for' loop to iterate through the elements of the given set.</p>
 
-<h3>Adding Elements to the Set</h3>
-<p>Python provides methods like add() and update() to add elements to a set.</p>
-<ul>
-  <li><b>add():</b> This method is used to add a single element to the set.</li>
-  <li><b>update():</b> This method is used to add multiple elements to the set.</li>
-</ul>
-<p>Let us see a simple example showing the way of adding elements to the set in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py">
+      <h3>Adding Elements to the Set</h3>
+      <p>Python provides methods like add() and update() to add elements to a set.</p>
+      <ul>
+        <li><b>add():</b> This method is used to add a single element to the set.</li>
+        <li><b>update():</b> This method is used to add multiple elements to the set.</li>
+      </ul>
+      <p>Let us see a simple example showing the way of adding elements to the set in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
 # simple example to show how to add elements to the set  
   
 # given set  
@@ -723,27 +724,31 @@ print("Updated Set (Added single element):", subjects)
 subjects.update(['computer', 'english'])      # using update()  
 print("Update Set (Added Multiple elements):", subjects) 
   </code></pre>
-</div>
+      </div>
 
-<h5>Output:</h5>
-<pre><code class="language-powershell">
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
 Given Set: {'physics', 'biology', 'chemistry'}
 Updated Set (Added single element): {'physics', 'biology', 'chemistry', 'maths'}
 Update Set (Added Multiple elements): {'physics', 'chemistry', 'english', 'biology', 'computer', 'maths'}
 </code></pre>
-<p>In this example, we have given a set consisting of 3 elements. We have then used the add() method to add a new element to the set. We have also used the update() method to add multiple elements to the given set.</p>
+      <p>In this example, we have given a set consisting of 3 elements. We have then used the add() method to add a new
+        element to the set. We have also used the update() method to add multiple elements to the given set.</p>
 
-<h3>Removing Elements from the Set</h3>
-<p>In Python, we can easily remove elements from a given set using methods like remove(), discard(), pop(), and clear().</p>
-<ul>
-  <li><b>remove():</b> This method allow us to remove a specific element from the set. It will raise a KeyError if the element is not found in the given set.</li>
-  <li><b>discard():</b> This method is also used to remove a specified element from the set; however, it does not raise any error if the element is not found.</li>
-  <li><b>pop()</b>: This method is used to remove and returns a random element from the set.</li>
-</ul>
-<p>Here is a simple example showing the working of these methods to remove elements from a set in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py">
+      <h3>Removing Elements from the Set</h3>
+      <p>In Python, we can easily remove elements from a given set using methods like remove(), discard(), pop(), and
+        clear().</p>
+      <ul>
+        <li><b>remove():</b> This method allow us to remove a specific element from the set. It will raise a KeyError if
+          the element is not found in the given set.</li>
+        <li><b>discard():</b> This method is also used to remove a specified element from the set; however, it does not
+          raise any error if the element is not found.</li>
+        <li><b>pop()</b>: This method is used to remove and returns a random element from the set.</li>
+      </ul>
+      <p>Here is a simple example showing the working of these methods to remove elements from a set in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
 # simple example to show how to remove elements from the set  
   
 # given set  
@@ -766,25 +771,177 @@ print("Updated Set (Removed a random element'):", subjects)
 subjects.clear()      # using clear()  
 print("Updated Set (Removed all elements):", subjects)  
   </code></pre>
-</div>
+      </div>
 
-<h5>Output:</h5>
-<pre><code class="powershell">
+      <h5>Output:</h5>
+      <pre><code class="powershell">
 Given Set: {'physics', 'chemistry', 'english', 'computer', 'biology', 'maths'}
 Updated Set (Removed 'maths'): {'physics', 'chemistry', 'english', 'computer', 'biology'}
 Updated Set (Removed 'chemistry'): {'physics', 'english', 'computer', 'biology'}
 Updated Set (Removed a random element'): {'english', 'computer', 'biology'}
 Updated Set (Removed all elements): set()
 </code></pre>
-<p>In this example, we have given a set consisting of six elements. We have then used the remove(), and discard() methods to remove the specified elements from the set. We have then used the pop() method to remove a random element from the set. At last, we have used the clear() method to remove all the elements from the given set. As a result, the set becomes empty.</p>
+      <p>In this example, we have given a set consisting of six elements. We have then used the remove(), and discard()
+        methods to remove the specified elements from the set. We have then used the pop() method to remove a random
+        element from the set. At last, we have used the clear() method to remove all the elements from the given set. As
+        a result, the set becomes empty.</p>
 
-<h3>Set Operations in Python</h3>
-<p>Similar to the Set Theory in Maths, Python sets also provide support to various mathematical operations like union, intersection, difference, symmetric difference and more.</p>
-<p>Let us discuss some of these operations with the help of examples.</p>
+      <h3>Set Operations in Python</h3>
+      <p>Similar to the Set Theory in Maths, Python sets also provide support to various mathematical operations like
+        union, intersection, difference, symmetric difference and more.</p>
+      <p>Let us discuss some of these operations with the help of examples.</p>
 
+      <h3>Union of Sets</h3>
+      <p>In mathematical terms, union of sets A and B is defined as the set of all those elements which belongs to A or
+        B or both and is denoted by A∪B.</p>
+      <pre><code class="language-powershell">A∪B = {x: x ∈ A or x ∈ B}  </code></pre>
+      <img src="../Python/images/union.png" alt="union of sets" class="img-fluid">
+      <p>For instance, let A = {1, 2, 3}, and B = {2, 3, 4, 5}. Therefore, A∪B = {1, 2, 3, 4, 5}.</p>
+      <p>Similarly in Python, we can perform union of sets by combining their elements, and eliminating duplicates with
+        the help of the | operator or union() method.</p>
+      <p>Let us see a simple example showing the union of sets in Python.</p>
 
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-python">
+# simple example on union of sets  
+  
+set_A = {1, 2, 3}     # set A  
+print("Set A:", set_A)  
+  
+set_B = {2, 3, 4, 5}  # set B  
+print("Set B:", set_B)  
+      
+print("\nUnion of Sets A and B:")       # union of sets  
+print("Method 1:", set_A | set_B)       # using |  
+print("Method 2:", set_A.union(set_B))  # using union()  
+        </code></pre>
+      </div>
+      <h5>Output</h5>
+      <pre><code class="language-powershell">
+Set A: {1, 2, 3}
+Set B: {2, 3, 4, 5}
 
+Union of Sets A and B:
+Method 1: {1, 2, 3, 4, 5}
+Method 2: {1, 2, 3, 4, 5}
+  </code></pre>
 
+      <p>In the above example, we have defined two sets and performed their union using the | operator and union()
+        method.</p>
+
+      <h3>Intersection of Sets</h3>
+      <p>In mathematical terms, intersection of two sets A and B is defined as the set of all those elements which
+        belongs to both A and B and is denoted by A∩B.</p>
+      <pre><code class="language-powershell">A∩B = {x: x ∈ A and x ∈ B}</code></pre>
+      <img src="../Python/images/intersection.png" class="img-fluid" alt="intersection of sets">
+      <p>For instance, let A = {1, 2, 3}, and B = {2, 3, 4, 5}. Therefore, A∩B = {2, 3}.</p>
+      <p>Similarly in Python, we can perform intersection of sets by using the & operator or intersection() method to
+        return the elements common in both sets.</p>
+      <p>Let us see a simple example showing the intersection of sets in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+# simple example on intersection of sets  
+  
+set_A = {1, 2, 3}     # set A  
+print("Set A:", set_A)  
+  
+set_B = {2, 3, 4, 5}  # set B  
+print("Set B:", set_B)  
+  
+print("\nIntersection of Sets A and B:")       # intersection of sets  
+print("Method 1:", set_A & set_B)       # using &  
+print("Method 2:", set_A.intersection(set_B))  # using intersection() 
+        </code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
+Set A: {1, 2, 3}
+Set B: {2, 3, 4, 5}
+
+Intersection of Sets A and B:
+Method 1: {2, 3}
+Method 2: {2, 3}
+</code></pre>
+
+      <p>In the above example, we have defined two sets and performed their intersection using the & operator and
+        intersection() method.</p>
+
+      <h3>Difference of Sets</h3>
+      <p>In mathematical terms, difference of two sets A and B is defined as the set of all those elements which belongs
+        to A, but do not belong to B and is denoted by A-B.</p>
+      <pre><code class="language-py">A-B = {x: x ∈ A and x ∉ B}  </code></pre>
+      <img src="../Python/images/differences.png" class="img-fluid" alt="difference of sets">
+      <p>For instance, let A = {1, 2, 3}, and B = {2, 3, 4, 5}. Therefore, A-B = {1} and B-A = {4, 5}.</p>
+      <p>Similarly in Python, we can perform difference of sets by using the - operator or difference() method to return
+        the elements present in the first set but not in the second one.</p>
+      <p>Let us see a simple example showing the difference of sets in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py">
+# simple example on difference of sets  
+  
+set_A = {1, 2, 3}     # set A  
+print("Set A:", set_A)  
+  
+set_B = {2, 3, 4, 5}  # set B  
+print("Set B:", set_B)  
+  
+print("\nA - B:")       # difference of sets  
+print("Method 1:", set_A - set_B)       # using -  
+print("Method 2:", set_A.difference(set_B))  # using difference()  
+  
+print("\nB - A:")  
+print("Method 1:", set_B - set_A)       # using -  
+print("Method 2:", set_B.difference(set_A))  # using difference()  
+        </code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">
+Set A: {1, 2, 3}
+Set B: {2, 3, 4, 5}
+
+A - B:
+Method 1: {1}
+Method 2: {1}
+
+B - A:
+Method 1: {4, 5}
+Method 2: {4, 5}
+      </code></pre>
+      <p>In the above example, we have defined two sets and performed their difference using the - operator and
+        difference() method.</p>
+
+<h3>Set Comprehension</h3>
+<p>In Python, set comprehension allows us to create sets in a concise and easy way.</p>
+<p>The following example demonstrates how set comprehension works in Python:</p>
+<div class="card-desc">
+  <h4>Example:</h4>
+  <pre><code class="language-py">
+# simple example on set comprehension  
+  
+# creating a set of square of numbers  
+set_of_squares = {i**2 for i in range(6)}  
+print(set_of_squares)  
+  
+# creating a set of cube of numbers  
+set_of_cubes = {i**3 for i in range(6)}  
+print(set_of_cubes) 
+  </code></pre>
+</div>
+
+<h5>Output:</h5>
+<pre><code class="language-powershell">
+{0, 1, 4, 9, 16, 25}
+{0, 1, 64, 8, 27, 125}
+</code></pre>
+
+<p>In the above example, we have used the set comprehension to create the desired set.</p>
+
+<hr class="mt-5">
+
+<h3>Frozenset in Python</h3>
 
 
 
