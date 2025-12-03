@@ -1076,9 +1076,63 @@ Updated Set: set()
 <h5>Syntax:</h5>
 <pre><code class="language-powershell">set_name.copy()</code></pre>
 <p>We will now see an example showing the use of set's copy() method in Python.</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+# python program to show the use of set copy() method    
+    
+# creating a set  
+vegetable_set = {'potato', 'eggplant', 'tomato', 'cabbage', 'broccoli'}  
+# printing the set  
+print("Given Set:", vegetable_set)  
+  
+# using the copy() method  
+dummy_set = vegetable_set.copy()  
+  
+# printing the updated set    
+print("Dummy Set:", dummy_set)  
+  </code></pre>
+</div>
+<h5>Output:</h5>
+<pre><code class="language-powershell">
+Given Set: {'potato', 'tomato', 'broccoli', 'eggplant', 'cabbage'}
+Dummy Set: {'potato', 'tomato', 'broccoli', 'eggplant', 'cabbage'}
+</code></pre>
+<p>In this example, we have used the copy() method to create a shallow copy of the given set.</p>
 
+<h3>4) discard()</h3>
+<p>The <b>discard()</b> method is utilized to remove the elements from the set. This method does not return any error in case the particular element is not found in the given set.</p>
+<p>The following is the syntax of the discard() method:</p>
+<h5>Syntax:</h5>
+<pre><code class="language-powershell">set_name.discard(item)</code></pre>
+<p>We will now look at a simple example showing the usage of set's discard() method in Python.</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py">
+# python program to show the use of set discard() method    
+    
+# creating a set  
+beverage_set = {'milk', 'juice', 'soda', 'tea', 'coffee'}  
+# printing the set  
+print("Given Set:", beverage_set)  
+  
+# using the discard() method  
+beverage_set.discard('soda')  
+  
+# printing the updated set  
+print("Updated Set:", beverage_set)  
+  </code></pre>
+</div>
 
+<h5>Output:</h5>
+<pre><code class="language-powershell">
+Given Set: {'juice', 'milk', 'coffee', 'tea', 'soda'}
+Updated Set: {'juice', 'milk', 'coffee', 'tea'}
+</code></pre>
+<p>In this example, we have used the discard() method to remove the specified element from the given set.</p>
 
+<h3>5) remove()</h3>
+<p></p>
 
 
 
