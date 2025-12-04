@@ -1039,18 +1039,28 @@ Updated Dictionary: {'name': 'Sachin', 'age': 22, 'salary': 69000, 'profession':
         dictionary.</p>
 
       <h3>3) copy()</h3>
-      <p></p>
-      <p></p>
-      <h5></h5>
-      <pre><code class="language-powershell"></code></pre>
-      <p></p>
+      <p>Python's copy() method is a built-in dictionary method. This method is utilized in order to create a shallow copy of the dictionary.</p>
+      <p>The syntax of the copy() method is shown below:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">new_dict = old_dict.copy()  </code></pre>
+      <p>We will now see an example showing the use case of the dictionary's copy() method in Python.</p>
       <div class="card-desc">
         <h4>Example</h4>
-        <pre><code class="language-py line-numbers"></code></pre>
+        <pre><code class="language-py line-numbers"># python program to show the use of copy() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+print("Given Dictionary:", dict_one)  
+  
+# using the copy() method  
+new_dict = dict_one.copy()  
+  
+print("New Dictionary:", new_dict)  </code></pre>
       </div>
       <h5>Output:</h5>
-      <pre><code class="language-powershell"></code></pre>
-      <p></p>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+New Dictionary: {'name': 'Sachin', 'age': 22}</code></pre>
+      <p>Here, we have used the copy() method to create a shallow copy of the given dictionary by copying all items from it to the targeted dictionary.</p>
 
       <h3>4) pop()</h3>
       <p>The pop() method is one of the built-in Python methods used to remove the value of the specified key from the
