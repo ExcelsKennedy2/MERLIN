@@ -1039,7 +1039,8 @@ Updated Dictionary: {'name': 'Sachin', 'age': 22, 'salary': 69000, 'profession':
         dictionary.</p>
 
       <h3>3) copy()</h3>
-      <p>Python's copy() method is a built-in dictionary method. This method is utilized in order to create a shallow copy of the dictionary.</p>
+      <p>Python's copy() method is a built-in dictionary method. This method is utilized in order to create a shallow
+        copy of the dictionary.</p>
       <p>The syntax of the copy() method is shown below:</p>
       <h5>Syntax:</h5>
       <pre><code class="language-powershell">new_dict = old_dict.copy()  </code></pre>
@@ -1060,7 +1061,8 @@ print("New Dictionary:", new_dict)  </code></pre>
       <h5>Output:</h5>
       <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
 New Dictionary: {'name': 'Sachin', 'age': 22}</code></pre>
-      <p>Here, we have used the copy() method to create a shallow copy of the given dictionary by copying all items from it to the targeted dictionary.</p>
+      <p>Here, we have used the copy() method to create a shallow copy of the given dictionary by copying all items from
+        it to the targeted dictionary.</p>
 
       <h3>4) pop()</h3>
       <p>The pop() method is one of the built-in Python methods used to remove the value of the specified key from the
@@ -1119,31 +1121,55 @@ Updated Dictionary: {'name': 'Sachin'}</code></pre>
       <p>In the above example, we have used the popitem() method to remove and return the last inserted item from the
         specified dictionary.</p>
 
-      <h3></h3>
-      <p></p>
-      <p></p>
-      <h5></h5>
-      <pre><code class="language-powershell"></code></pre>
-      <p></p>
+      <h3>6) clear()</h3>
+      <p>The clear() method is a built-in function used to clear all the data from the Python dictionaries. This method
+        allows us to remove all items from a given dictionary making it an empty dictionary.</p>
+      <p>The syntax of the clear() method is shown below:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">dict_name.clear()  </code></pre>
+      <p>We are now going to see a simple example of Python dictionary's clear() method.</p>
       <div class="card-desc">
         <h4>Example</h4>
-        <pre><code class="language-py line-numbers"></code></pre>
+        <pre><code class="language-py line-numbers"># python program to show the use of clear() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+print("Given Dictionary:", dict_one)  
+  
+# using the clear() method  
+dict_one.clear()  
+  
+print("Updated Dictionary:", dict_one) </code></pre>
       </div>
       <h5>Output:</h5>
-      <pre><code class="language-powershell"></code></pre>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+Updated Dictionary: {}</code></pre>
+      <p>In this example, we have used the clear() method to delete all the items from the dictionary. As a result, the
+        specified dictionary became an empty dictionary.</p>
 
-      <h3></h3>
-      <p></p>
-      <p></p>
-      <h5></h5>
-      <pre><code class="language-powershell"></code></pre>
-      <p></p>
+      <h3>7) keys()</h3>
+      <p>In Python, the keys() method is a built-in dictionary function used to return a view object with dictionary
+        keys, allowing us to access and iterate through the dictionary efficiently.</p>
+      <p>The following is the syntax of the keys() method:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">dict_name.keys()  </code></pre>
+      <p>Below is a simple example showing the implementation of the keys() method in Python.</p>
       <div class="card-desc">
         <h4>Example</h4>
-        <pre><code class="language-py line-numbers"></code></pre>
+        <pre><code class="language-py line-numbers"># python program to show the use of keys() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+print("Given Dictionary:", dict_one)  
+  
+# using the keys() method  
+print(dict_one.keys())</code></pre>
       </div>
       <h5>Output:</h5>
-      <pre><code class="language-powershell"></code></pre>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+dict_keys(['name', 'age'])</code></pre>
+      <p>In this example, we have used the keys() method to return a dict_keys object consisting of all the keys from
+        the given dictionary.</p>
 
       <h3></h3>
       <p></p>
