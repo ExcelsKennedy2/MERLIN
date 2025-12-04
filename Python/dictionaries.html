@@ -566,9 +566,97 @@
       </div>
     </div><!-- End Page Title -->
     <section>
-        <h1 id="greeting">Hello</h1>
-      <p>Hello world</p>
-    </section>
+        <p>A <b>Python Dictionary</b> is one of the built-in data types used to store data in 'key: value' pairs. The dictionary is an unordered, mutable and indexed collection where each key is unique and maps to a value. It is often used to store related data, like information associated with a particular entity or object, where we can easily get value on the basis of its key.</p>
+        <img src="../Python/images/python-dictionary.png" alt="python-dictionary-image" class="img-fluid my-3">
+        <p>Let us take a look at a simple example of a dictionary.</p>
+        <div class="card-desc">
+          <h4>Example</h4>
+          <pre><code class="language-py">
+# creating a Dictionary  
+D = {1: 'Learn', 2: 'Python', 3: 'from', 4: 'Tpoint', 5: 'Tech'}  
+  
+print(D)  
+          </code></pre>
+        </div>
+        <h5>Output:</h5>
+        <pre><code class="language-powershell">{1: 'Learn', 2: 'Python', 3: 'from', 4: 'Tpoint', 5: 'Tech'}</code></pre>
+        <p>In the above example, we have created a simple dictionary consisting of multiple 'key: value' pairs.</p>
+        <p>As we can observe, a dictionary in Python is a <i>mapping data type</i> where the value of one object maps to another. In order to establish the mapping between a key and a value, we have used the colon ':' symbol between the two.</p>
+    
+        <h3>Characteristics of Python Dictionary</h3>
+        <p>A dictionary in Python is a data type with the following characteristics:
+          <ul>
+            <li><b>Mutable</b>: Dictionaries can be modified after initialization allowing us to add, remove or update 'key: value' pairs.</li>
+            <li><b>Indexed</b>: Unlike lists or tuples, which are indexed by position, dictionaries use keys to access values, offering faster and more readable data retrieval.</li>
+            <li><b>Unordered</b>: Python dictionary does not follow a particular order to store items. However, starting from Python 3.7, the feature for the dictionary to maintain the insertion order of the items was added.</li>
+            <li><b>Unique Keys</b>: Each key in a dictionary must be unique. If we try to assign a value to an existing key, the old value will be replaced by the new one.</li>
+            <li><b>Heterogeneous</b>: Keys and values in a dictionary can be of any type.</li>
+          </ul>
+        </p>
+
+        <h3>Creating a Dictionary</h3>
+        <p>In Python, we can create a dictionary by enclosing the sequence of 'key: value' pairs with curly braces separated by commas. As an alternate option, we can use the Python's built-in <i>dict()</i> function.</p>
+        <p>Here is a simple example showing both ways of creating a dictionary in Python.</p>
+        <div class="card-desc">
+          <h4>Example</h4>
+          <pre><code class="language-py">
+# simple example to create python dictionary  
+  
+# creating dictionaries  
+dict_zero = {}     # empty dictionary  
+dict_one = {"name": "Lucy", "age": 19, "city": "New Jersey"} # using {}  
+dict_two = dict(name = "John", age = 21, city = "Havana")  # using dict()  
+  
+# printing the results  
+print("Empty Dictionary:", dict_zero)  
+print("Dictionary 1 (created using {}):", dict_one)  
+print("Dictionary 2 (created using dict()):", dict_two)  
+          </code></pre>
+        </div>
+        <h5>Output:</h5>
+        <pre><code class="language-powershell">
+Empty Dictionary: {}
+Dictionary 1 (created using {}): {'name': 'Lucy', 'age': 19, 'city': 'New Jersey'}
+Dictionary 2 (created using dict()): {'name': 'John', 'age': 21, 'city': 'Havana'}
+        </code></pre>
+        <p>The above example shows different ways to create dictionaries in Python. We have also seen how to create an empty dictionary.</p>
+        <p class="card">Note: The dict() function can also be used to transform an existing data type into a dictionary.</p>
+        <h3>Accessing Dictionary Items</h3>
+        <p>In Python, we can access the value of a dictionary item by <b>enclosing that particular key with square brackets '[]'</b>. Another way to access dictionary items is by the use of the <i>get()</i> method.</p>
+        <p>The following is a simple example showing the ways to access dictionary items in Python.</p>
+        <div class="card-desc">
+          <h4>Example</h4>
+          <pre><code class="language-py line-numbers">
+# simple example to access dictionary items  
+  
+# given dictionary  
+dict_x = {  
+    "name": "Sachin",   
+    "age": 18,   
+    "gender": "male",   
+    "profession": "student"  
+    }  
+  
+print("Person's Details")  
+# accessing dictionary items using keys  
+print("Name:", dict_x["name"])  
+print("Age:", dict_x["age"])  
+  
+# accessing dictionary items using get()  
+print("Gender:", dict_x.get("gender"))  
+print("Profession:", dict_x.get("profession"))
+          </code></pre>
+        </div>
+        <h5>Output:</h5>
+        <pre><code class="language-powershell">
+Person's Details
+Name: Sachin
+Age: 18
+Gender: male
+Profession: student </code></pre>
+<p>Here, we have accessed the different values of the dictionary items using the square brackets and get() method.</p>
+<h3>Adding Items to a Dictionary</h3>
+      </section>
 
 
     <!-- ======= Buttons ======= -->
