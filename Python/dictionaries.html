@@ -751,11 +751,11 @@ Update Dictionary (Removed all items): {}</code></pre>
       <p>In this example, we are given a dictionary. We have used several methods like del keyword, pop(), popitem(),
         and clear() methods to remove the items from the dictionary.</p>
 
-        <h3>Changing Dictionary Items</h3>
-        <p>In Python, we can <b>change the values of an item</b> in the dictionary by referring to its key.</p>
-        <p>Let us take a simple example to understand how to change dictionary items in Python.</p>
-        <div class="card-desc">
-          <pre><code class="language-py line-numbers"># simple example to change dictionary items  
+      <h3>Changing Dictionary Items</h3>
+      <p>In Python, we can <b>change the values of an item</b> in the dictionary by referring to its key.</p>
+      <p>Let us take a simple example to understand how to change dictionary items in Python.</p>
+      <div class="card-desc">
+        <pre><code class="language-py line-numbers"># simple example to change dictionary items  
   
 # given dictionary  
 dict_x = {  
@@ -773,13 +773,134 @@ dict_x["age"] = 20
 dict_x["profession"] = "developer"  
   
 print("Updated Dictionary:", dict_x)  </code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 18, 'gender': 'male', 'profession': 'student', 'country': 'India'}
+Updated Dictionary: {'name': 'Sachin', 'age': 20, 'gender': 'male', 'profession': 'developer', 'country': 'India'}</code></pre>
+      <p>In this example, we have used the assignment operator to change the value of existing keys in the given
+        dictionary. As a result, the dictionary items are updated.</p>
+      <h3>Iterating Through a Dictionary</h3>
+      <p>Starting from Python 3.7, a dictionary is an <i>ordered collection of items</i>; therefore, it maintains the order of
+        its items. We can <b>iterate through dictionary keys</b> using the 'for' loop, as shown in the following example.</p>
+        <div class="card-desc">
+          <h4>Example</h4>
+          <pre><code class="language-py line-numbers"># simple example to iterate through a dictionary  
+  
+# given dictionary  
+dict_x = {  
+    "Name": "Sachin",   
+    "Age": 18,   
+    "Gender": "Male",   
+    "Profession": "Student",  
+    "Country": "India"  
+    }  
+  
+print("Items in Dictionary:")  
+# iterating through a dictionary using for loop  
+for key in dict_x:  
+  value = dict_x[key]  
+  print(key, "->", value)  </code></pre>
         </div>
         <h5>Output:</h5>
-        <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 18, 'gender': 'male', 'profession': 'student', 'country': 'India'}
-Updated Dictionary: {'name': 'Sachin', 'age': 20, 'gender': 'male', 'profession': 'developer', 'country': 'India'}</code></pre>
-<p>In this example, we have used the assignment operator to change the value of existing keys in the given dictionary. As a result, the dictionary items are updated.</p>
-<h3>Iterating Through a Dictionary</h3>
-<p></p>
+        <pre><code class="language-powershell">Items in Dictionary:
+Name -> Sachin
+Age -> 18
+Gender -> Male
+Profession -> Student
+Country -> India</code></pre>
+<p>In the above example, we have used the 'for' loop to iterate through the keys in dictionary and accessed the value for each key</p>
+
+<h3>Finding Length of a Dictionary</h3>
+<p>In order to <b>find the length of a dictionary</b>, we can use Python's built-in function called <i>len()</i>. This function will return the total number of 'key: value' pairs present in a dictionary, allowing us to determine the size of the dictionary efficiently.</p>
+<p>Let us see the following example showing the use of the len() function in determining the length of a Python dictionary.</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py line-numbers"># simple example to determine length of a dictionary  
+  
+# given dictionary  
+employees_info = {  
+    "John": "Sr. Software Developer",  
+    "Irfan": "UI/UX Designer",  
+    "Lucy": "Human Resource Manager",  
+    "Peter": "Team Lead",  
+    "Johnson": "Business Developer",  
+    }  
+  
+print("Given Data:", employees_info)  
+# finding length of the dictionary  
+print("Size of Data:", len(employees_info)) # using len() </code></pre>
+</div>
+<h5>Output:</h5>
+<pre><code class="language-powershell">Given Data: {'John': 'Sr. Software Developer', 'Irfan': 'UI/UX Designer', 'Lucy': 'Human Resource Manager', 'Peter': 'Team Lead', 'Johnson': 'Business Developer'}
+Size of Data: 5</code></pre>
+<p>In the above example, we have used the len() function in order to find out how many items are in the given dictionary.</p>
+
+<h3>Dictionary Membership Test</h3>
+<p>We can use the <b>'in'</b> or <b>'not in'</b> operators in order to check whether a key exists in a dictionary. Here's a simple example that shows how to see if a specified key is part of a dictionary in Python.</p>
+<div class="card-desc">
+  <h4>Example</h4>
+  <pre><code class="language-py line-numbers"># simple example to check membership   
+dict_y = {  
+    'fruit': 'apple',  
+    'vegetable': 'onion',  
+    'dry-fruit': 'resins'  
+}  
+# using 'in' and 'not in' operators  
+print("Is 'fruit' a member of 'dict_y'?:", 'fruit' in dict_y)  
+print("Is 'beverage' a member of 'dict_y'?:", 'beverage' in dict_y)  
+print("Is 'beverage' NOT a member of 'dict_y'?:", 'beverage' not in dict_y)</code></pre>
+</div>
+<h5>Output:</h5>
+<pre><code class="language-powershell">Is 'fruit' a member of 'dict_y'?: True
+Is 'beverage' a member of 'dict_y'?: False
+Is 'beverage' NOT a member of 'dict_y'?: True</code></pre>
+<p>In this example, we have used the 'in' and 'not in' operators to check if the specified keys are present in the given dictionary. The 'in' operator returns the Boolean value after checking if the key exists in the dictionary, whereas the 'not in' operator returns the Boolean value after checking if the key does not exist in it.</p>
+
+<h3>Dictionary Methods in Python</h3>
+<p>Python offers several dictionary methods in order to manipulate the data of a dictionary. These methods are commonly used to add, update, delete, and return elements from the dictionaries. Some of these methods are as follows:</p>
+<table class="table table-bordered table-striped">
+  <tr class="bg-dark text-white">
+    <th>Dictionary Method</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <th>get()</th>
+    <td>This method returns the value associated with a specific key.</td>
+  </tr>
+  <tr>
+    <th>update()</th>
+    <td>This method is utilized to add a new item to the dictionary or update the value of an existing key.</td>
+  </tr>
+  <tr>
+    <th>copy()</th>
+    <td>This method is utilized to return a copy of the dictionary.</td>
+  </tr>
+  <tr>
+    <th>pop()</th>
+    <td>This method removes the item with the given key from the dictionary.</td>
+  </tr>
+  <tr>
+    <th>popitem()</th>
+    <td>This method is utilized to return the last inserted key and value as a tuple.</td>
+  </tr>
+  <tr>
+    <th>clear()</th>
+    <td>This method removes all items from the dictionary.</td>
+  </tr>
+  <tr>
+    <th>keys()</th>
+    <td>This method returns all the keys in the dictionary.</td>
+  </tr>
+  <tr>
+    <th>values()</th>
+    <td>This method is utilized to return all the values in the dictionary.</td>
+  </tr>
+</table>
+<p>Python dictionaries are a fundamental and highly flexible data type that allow us to store, access, and manipulate data using 'key: value' pairs. They are optimized for fast lookups and can handle everything from simple mappings to complex nested data. Whether we are managing configuration files, processing JSON, or building data-driven applications, mastering dictionaries is essential for writing efficient and clean line of codes in real-world scenarios.</p>
+
+<hr class="my-5">
+
+<h3>Python Dictionary Methods</h3>
     </section>
 
 
