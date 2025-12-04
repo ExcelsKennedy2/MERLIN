@@ -1171,20 +1171,29 @@ dict_keys(['name', 'age'])</code></pre>
       <p>In this example, we have used the keys() method to return a dict_keys object consisting of all the keys from
         the given dictionary.</p>
 
-      <h3></h3>
-      <p></p>
-      <p></p>
-      <h5></h5>
-      <pre><code class="language-powershell"></code></pre>
-      <p></p>
+      <h3>8) fromkeys()</h3>
+      <p>The fromkeys() method in Python is a built-in dictionary function that we can use to create a dictionary from keys with a shared default value.</p>
+      <p>The syntax of the fromkeys() method is shown below:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">dict.fromkeys(keys, value)</code></pre>
+      <p>We are now going to see a simple example of the fromkeys() method.</p>
       <div class="card-desc">
         <h4>Example</h4>
-        <pre><code class="language-py line-numbers"></code></pre>
+        <pre><code class="language-py line-numbers"># python program to show the use of fromkeys() method  
+  
+# given list of keys  
+given_keys = ['first name', 'last name', 'job profile']  
+  
+# using the dict.fromkeys() method  
+dict_one = dict.fromkeys(given_keys, 'Unknown')  
+  
+print("Created Dictionary:", dict_one) </code></pre>
       </div>
       <h5>Output:</h5>
-      <pre><code class="language-powershell"></code></pre>
+      <pre><code class="language-powershell">Created Dictionary: {'first name': 'Unknown', 'last name': 'Unknown', 'job profile': 'Unknown'}</code></pre>
+      <p>In the above example, we have used the fromkeys() method to create a new dictionary and initialized the values of each key with 'Unknown'.</p>
 
-      <h3></h3>
+      <h3>9) items()</h3>
       <p></p>
       <p></p>
       <h5></h5>
