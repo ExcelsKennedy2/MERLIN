@@ -780,11 +780,13 @@ Updated Dictionary: {'name': 'Sachin', 'age': 20, 'gender': 'male', 'profession'
       <p>In this example, we have used the assignment operator to change the value of existing keys in the given
         dictionary. As a result, the dictionary items are updated.</p>
       <h3>Iterating Through a Dictionary</h3>
-      <p>Starting from Python 3.7, a dictionary is an <i>ordered collection of items</i>; therefore, it maintains the order of
-        its items. We can <b>iterate through dictionary keys</b> using the 'for' loop, as shown in the following example.</p>
-        <div class="card-desc">
-          <h4>Example</h4>
-          <pre><code class="language-py line-numbers"># simple example to iterate through a dictionary  
+      <p>Starting from Python 3.7, a dictionary is an <i>ordered collection of items</i>; therefore, it maintains the
+        order of
+        its items. We can <b>iterate through dictionary keys</b> using the 'for' loop, as shown in the following
+        example.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"># simple example to iterate through a dictionary  
   
 # given dictionary  
 dict_x = {  
@@ -800,22 +802,26 @@ print("Items in Dictionary:")
 for key in dict_x:  
   value = dict_x[key]  
   print(key, "->", value)  </code></pre>
-        </div>
-        <h5>Output:</h5>
-        <pre><code class="language-powershell">Items in Dictionary:
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">Items in Dictionary:
 Name -> Sachin
 Age -> 18
 Gender -> Male
 Profession -> Student
 Country -> India</code></pre>
-<p>In the above example, we have used the 'for' loop to iterate through the keys in dictionary and accessed the value for each key</p>
+      <p>In the above example, we have used the 'for' loop to iterate through the keys in dictionary and accessed the
+        value for each key</p>
 
-<h3>Finding Length of a Dictionary</h3>
-<p>In order to <b>find the length of a dictionary</b>, we can use Python's built-in function called <i>len()</i>. This function will return the total number of 'key: value' pairs present in a dictionary, allowing us to determine the size of the dictionary efficiently.</p>
-<p>Let us see the following example showing the use of the len() function in determining the length of a Python dictionary.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py line-numbers"># simple example to determine length of a dictionary  
+      <h3>Finding Length of a Dictionary</h3>
+      <p>In order to <b>find the length of a dictionary</b>, we can use Python's built-in function called <i>len()</i>.
+        This function will return the total number of 'key: value' pairs present in a dictionary, allowing us to
+        determine the size of the dictionary efficiently.</p>
+      <p>Let us see the following example showing the use of the len() function in determining the length of a Python
+        dictionary.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"># simple example to determine length of a dictionary  
   
 # given dictionary  
 employees_info = {  
@@ -829,17 +835,19 @@ employees_info = {
 print("Given Data:", employees_info)  
 # finding length of the dictionary  
 print("Size of Data:", len(employees_info)) # using len() </code></pre>
-</div>
-<h5>Output:</h5>
-<pre><code class="language-powershell">Given Data: {'John': 'Sr. Software Developer', 'Irfan': 'UI/UX Designer', 'Lucy': 'Human Resource Manager', 'Peter': 'Team Lead', 'Johnson': 'Business Developer'}
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">Given Data: {'John': 'Sr. Software Developer', 'Irfan': 'UI/UX Designer', 'Lucy': 'Human Resource Manager', 'Peter': 'Team Lead', 'Johnson': 'Business Developer'}
 Size of Data: 5</code></pre>
-<p>In the above example, we have used the len() function in order to find out how many items are in the given dictionary.</p>
+      <p>In the above example, we have used the len() function in order to find out how many items are in the given
+        dictionary.</p>
 
-<h3>Dictionary Membership Test</h3>
-<p>We can use the <b>'in'</b> or <b>'not in'</b> operators in order to check whether a key exists in a dictionary. Here's a simple example that shows how to see if a specified key is part of a dictionary in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py line-numbers"># simple example to check membership   
+      <h3>Dictionary Membership Test</h3>
+      <p>We can use the <b>'in'</b> or <b>'not in'</b> operators in order to check whether a key exists in a dictionary.
+        Here's a simple example that shows how to see if a specified key is part of a dictionary in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"># simple example to check membership   
 dict_y = {  
     'fruit': 'apple',  
     'vegetable': 'onion',  
@@ -849,126 +857,140 @@ dict_y = {
 print("Is 'fruit' a member of 'dict_y'?:", 'fruit' in dict_y)  
 print("Is 'beverage' a member of 'dict_y'?:", 'beverage' in dict_y)  
 print("Is 'beverage' NOT a member of 'dict_y'?:", 'beverage' not in dict_y)</code></pre>
-</div>
-<h5>Output:</h5>
-<pre><code class="language-powershell">Is 'fruit' a member of 'dict_y'?: True
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">Is 'fruit' a member of 'dict_y'?: True
 Is 'beverage' a member of 'dict_y'?: False
 Is 'beverage' NOT a member of 'dict_y'?: True</code></pre>
-<p>In this example, we have used the 'in' and 'not in' operators to check if the specified keys are present in the given dictionary. The 'in' operator returns the Boolean value after checking if the key exists in the dictionary, whereas the 'not in' operator returns the Boolean value after checking if the key does not exist in it.</p>
+      <p>In this example, we have used the 'in' and 'not in' operators to check if the specified keys are present in the
+        given dictionary. The 'in' operator returns the Boolean value after checking if the key exists in the
+        dictionary, whereas the 'not in' operator returns the Boolean value after checking if the key does not exist in
+        it.</p>
 
-<h3>Dictionary Methods in Python</h3>
-<p>Python offers several dictionary methods in order to manipulate the data of a dictionary. These methods are commonly used to add, update, delete, and return elements from the dictionaries. Some of these methods are as follows:</p>
-<table class="table table-bordered table-striped">
-  <tr class="bg-dark text-white">
-    <th>Dictionary Method</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <th>get()</th>
-    <td>This method returns the value associated with a specific key.</td>
-  </tr>
-  <tr>
-    <th>update()</th>
-    <td>This method is utilized to add a new item to the dictionary or update the value of an existing key.</td>
-  </tr>
-  <tr>
-    <th>copy()</th>
-    <td>This method is utilized to return a copy of the dictionary.</td>
-  </tr>
-  <tr>
-    <th>pop()</th>
-    <td>This method removes the item with the given key from the dictionary.</td>
-  </tr>
-  <tr>
-    <th>popitem()</th>
-    <td>This method is utilized to return the last inserted key and value as a tuple.</td>
-  </tr>
-  <tr>
-    <th>clear()</th>
-    <td>This method removes all items from the dictionary.</td>
-  </tr>
-  <tr>
-    <th>keys()</th>
-    <td>This method returns all the keys in the dictionary.</td>
-  </tr>
-  <tr>
-    <th>values()</th>
-    <td>This method is utilized to return all the values in the dictionary.</td>
-  </tr>
-</table>
-<p>Python dictionaries are a fundamental and highly flexible data type that allow us to store, access, and manipulate data using 'key: value' pairs. They are optimized for fast lookups and can handle everything from simple mappings to complex nested data. Whether we are managing configuration files, processing JSON, or building data-driven applications, mastering dictionaries is essential for writing efficient and clean line of codes in real-world scenarios.</p>
+      <h3>Dictionary Methods in Python</h3>
+      <p>Python offers several dictionary methods in order to manipulate the data of a dictionary. These methods are
+        commonly used to add, update, delete, and return elements from the dictionaries. Some of these methods are as
+        follows:</p>
+      <table class="table table-bordered table-striped">
+        <tr class="bg-dark text-white">
+          <th>Dictionary Method</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <th>get()</th>
+          <td>This method returns the value associated with a specific key.</td>
+        </tr>
+        <tr>
+          <th>update()</th>
+          <td>This method is utilized to add a new item to the dictionary or update the value of an existing key.</td>
+        </tr>
+        <tr>
+          <th>copy()</th>
+          <td>This method is utilized to return a copy of the dictionary.</td>
+        </tr>
+        <tr>
+          <th>pop()</th>
+          <td>This method removes the item with the given key from the dictionary.</td>
+        </tr>
+        <tr>
+          <th>popitem()</th>
+          <td>This method is utilized to return the last inserted key and value as a tuple.</td>
+        </tr>
+        <tr>
+          <th>clear()</th>
+          <td>This method removes all items from the dictionary.</td>
+        </tr>
+        <tr>
+          <th>keys()</th>
+          <td>This method returns all the keys in the dictionary.</td>
+        </tr>
+        <tr>
+          <th>values()</th>
+          <td>This method is utilized to return all the values in the dictionary.</td>
+        </tr>
+      </table>
+      <p>Python dictionaries are a fundamental and highly flexible data type that allow us to store, access, and
+        manipulate data using 'key: value' pairs. They are optimized for fast lookups and can handle everything from
+        simple mappings to complex nested data. Whether we are managing configuration files, processing JSON, or
+        building data-driven applications, mastering dictionaries is essential for writing efficient and clean line of
+        codes in real-world scenarios.</p>
 
-<hr class="my-5">
-<hr class="my-5">
+      <hr class="my-5">
+      <hr class="my-5">
 
-<h3>Python Dictionary Methods</h3>
-<p>In Python, Dictionary methods are the built-in functions that we can use to perform certain operations on dictionaries. Python dictionary is one of the most powerful data structures as this data type allows storing of data in the form of a <b>"key: value"</b> pair.</p>
-<p>Python provides different effective and efficient methods allow us to add, update, delete, and return elements from dictionaries. Here is a list of such methods used to manipulate dictionary data:</p>
-<table class="table table-bordered table-striped">
-<thead class="bg-dark text-white">
-  <tr>
-    <th>Method</th>
-    <th>Description</th>
-  </tr>
-</thead>
-<tr>
-  <th>get()</th>
-  <td>This method returns the value associated with a specific key.</td>
-</tr>
-<tr>
-  <th>update()</th>
-  <td>This method is utilized to add a new item to the dictionary or update the value of an existing key.</td>
-</tr>
-<tr>
-  <th>copy()</th>
-  <td>This method is utilized to return a copy of the dictionary.</td>
-</tr>
-<tr>
-  <th>pop()</th>
-  <td>This method removes the item with the given key from the dictionary.</td>
-</tr>
-<tr>
-  <th>popitem()</th>
-  <td>
-This method is utilized to return the last inserted key and value as a tuple.</td>
-</tr>
-<tr>
-  <th>clear()</th>
-  <td>This method removes all items from the dictionary.</td>
-</tr>
-<tr>
-  <th>keys()</th>
-  <td>This method returns all the keys in the dictionary.</td>
-</tr>
-<tr>
-  <th>fromkeys()</th>
-  <td>This method is used to create a new dictionary from a sequence of keys and a value</td>
-</tr>
-<tr>
-  <th>items()</th>
-  <td>This method returns a view of the key: value pairs from the dictionary.</td>
-</tr>
-<tr>
-  <th>setdefault()</th>
-  <td>This method is used to return value if key exists, otherwise it sets key with default value</td>
-</tr>
-<tr>
-  <th>values()</th>
-  <td>This method is utilized to return all the values in the dictionary.</td>
-</tr>
-</table>
+      <h3>Python Dictionary Methods</h3>
+      <p>In Python, Dictionary methods are the built-in functions that we can use to perform certain operations on
+        dictionaries. Python dictionary is one of the most powerful data structures as this data type allows storing of
+        data in the form of a <b>"key: value"</b> pair.</p>
+      <p>Python provides different effective and efficient methods allow us to add, update, delete, and return elements
+        from dictionaries. Here is a list of such methods used to manipulate dictionary data:</p>
+      <table class="table table-bordered table-striped">
+        <thead class="bg-dark text-white">
+          <tr>
+            <th>Method</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tr>
+          <th>get()</th>
+          <td>This method returns the value associated with a specific key.</td>
+        </tr>
+        <tr>
+          <th>update()</th>
+          <td>This method is utilized to add a new item to the dictionary or update the value of an existing key.</td>
+        </tr>
+        <tr>
+          <th>copy()</th>
+          <td>This method is utilized to return a copy of the dictionary.</td>
+        </tr>
+        <tr>
+          <th>pop()</th>
+          <td>This method removes the item with the given key from the dictionary.</td>
+        </tr>
+        <tr>
+          <th>popitem()</th>
+          <td>
+            This method is utilized to return the last inserted key and value as a tuple.</td>
+        </tr>
+        <tr>
+          <th>clear()</th>
+          <td>This method removes all items from the dictionary.</td>
+        </tr>
+        <tr>
+          <th>keys()</th>
+          <td>This method returns all the keys in the dictionary.</td>
+        </tr>
+        <tr>
+          <th>fromkeys()</th>
+          <td>This method is used to create a new dictionary from a sequence of keys and a value</td>
+        </tr>
+        <tr>
+          <th>items()</th>
+          <td>This method returns a view of the key: value pairs from the dictionary.</td>
+        </tr>
+        <tr>
+          <th>setdefault()</th>
+          <td>This method is used to return value if key exists, otherwise it sets key with default value</td>
+        </tr>
+        <tr>
+          <th>values()</th>
+          <td>This method is utilized to return all the values in the dictionary.</td>
+        </tr>
+      </table>
 
-<hr class="my-5">
+      <hr class="my-5">
 
-<h3>1) get()</h3>
-<p>In Python, the dictionary's get() method is used to return the value associated with a particular key in a dictionary. It is a secure method in order to access the values of the dictionary without raising a KeyError exception in case the key is not present.</p>
-<p>The syntax of the get() method is shown below:</p>
-<h5>Syntax</h5>
-<pre><code class="language-powershell">dict_name.get(key, default)  </code></pre>
-<p>Let us see an example to understand the working of the get() method in Python.</p>
-<div class="card-desc">
-  <h4>Example</h4>
-  <pre><code class="language-py line-numbers"># python program to show the use of get() method  
+      <h3>1) get()</h3>
+      <p>In Python, the dictionary's get() method is used to return the value associated with a particular key in a
+        dictionary. It is a secure method in order to access the values of the dictionary without raising a KeyError
+        exception in case the key is not present.</p>
+      <p>The syntax of the get() method is shown below:</p>
+      <h5>Syntax</h5>
+      <pre><code class="language-powershell">dict_name.get(key, default)  </code></pre>
+      <p>Let us see an example to understand the working of the get() method in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"># python program to show the use of get() method  
   
 # given dictionary  
 dict_one = {'name': 'Sachin', 'age': 22}  
@@ -977,14 +999,200 @@ print("Given Dictionary:", dict_one)
 # using the get() method  
 print(dict_one.get('name', 'Not Found'))  
 print(dict_one.get('salary', 'Not Found'))  </code></pre>
-</div>
-<h5>Output:</h5>
-<pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
 Sachin
 Not Found</code></pre>
-<p>In the above example, we have used the get() method to return the value of the specified key. As we can see, the key 'name' is present in the dictionary. Therefore, it has returned its value, whereas a default value 'Not Found' is printed for the key 'salary', which is not present in the dictionary.</p>
+      <p>In the above example, we have used the get() method to return the value of the specified key. As we can see,
+        the key 'name' is present in the dictionary. Therefore, it has returned its value, whereas a default value 'Not
+        Found' is printed for the key 'salary', which is not present in the dictionary.</p>
 
-<h3>2) update()</h3>
+      <h3>2) update()</h3>
+      <p>The update() method is a built-in dictionary function in Python that allows us to update the key: value pairs
+        of a dictionary with the help of the elements from another dictionary or an iterable of key: value pairs.</p>
+      <p>This method helps us add new data or merge it with existing dictionary entries efficiently and effectively.</p>
+      <p>The syntax of the update() method is shown below:</p>
+
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">dict_name.update(other_dict)</code></pre>
+      <p>Let us see a simple example showing the use of the update() method in Python.</p>
+
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py"># python program to show the use of update() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+dict_two = {'salary': 69000, 'profession': 'software engineer'}  
+print("Given Dictionary:", dict_one)  
+  
+# using the update() method  
+dict_one.update(dict_two)  
+  
+print("Updated Dictionary:", dict_one)</code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+Updated Dictionary: {'name': 'Sachin', 'age': 22, 'salary': 69000, 'profession': 'software engineer'}</code></pre>
+      <p>In this example, we have used the update() method to add the data from the specified dictionary to the targeted
+        dictionary.</p>
+
+      <h3>3) copy()</h3>
+      <p></p>
+      <p></p>
+      <h5></h5>
+      <pre><code class="language-powershell"></code></pre>
+      <p></p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"></code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell"></code></pre>
+      <p></p>
+
+      <h3>4) pop()</h3>
+      <p>The pop() method is one of the built-in Python methods used to remove the value of the specified key from the
+        dictionary. It also returns the removed value. If the key is not present in the dictionary, we can set an
+        optional value to be returned as default</p>
+      <p>The following is the syntax of the pop() method:</p>
+      <h5></h5>
+      <pre><code class="language-powershell">dict_name.pop(key)</code></pre>
+      <p>Let us see an example showing the use of the pop() method in Python.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"># python program to show the use of pop() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+print("Given Dictionary:", dict_one)  
+  
+# using the pop() method  
+age = dict_one.pop('age')  
+  
+print("Popped Value:", age)  
+print("Updated Dictionary:", dict_one)  </code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+Popped Value: 22
+Updated Dictionary: {'name': 'Sachin'}</code></pre>
+      <p>Here, we have used the pop() method to remove and return the value of the key 'age'.</p>
+
+      <h3>5) popitem()</h3>
+      <p>In Python, the popitem() method another built-in function used for dictionaries. The main objective of this
+        method is to allow us to remove and return the last inserted key: value pair as a tuple. In case the dictionary
+        is empty, this method will raise a KeyError exception.</p>
+      <p>Here is the syntax of the popitem() method in Python:</p>
+      <h5>Syntax</h5>
+      <pre><code class="language-powershell">dict_name.popitem()  </code></pre>
+      <p>Let us see a simple example showing the use of the popitem() method.</p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"># python program to show the use of popitem() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+print("Given Dictionary:", dict_one)  
+  
+# using the popitem() method  
+popped_item = dict_one.popitem()  
+  
+print("Popped Value:", popped_item)  
+print("Updated Dictionary:", dict_one)  </code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+Popped Value: ('age', 22)
+Updated Dictionary: {'name': 'Sachin'}</code></pre>
+      <p>In the above example, we have used the popitem() method to remove and return the last inserted item from the
+        specified dictionary.</p>
+
+      <h3></h3>
+      <p></p>
+      <p></p>
+      <h5></h5>
+      <pre><code class="language-powershell"></code></pre>
+      <p></p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"></code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell"></code></pre>
+
+      <h3></h3>
+      <p></p>
+      <p></p>
+      <h5></h5>
+      <pre><code class="language-powershell"></code></pre>
+      <p></p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"></code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell"></code></pre>
+
+      <h3></h3>
+      <p></p>
+      <p></p>
+      <h5></h5>
+      <pre><code class="language-powershell"></code></pre>
+      <p></p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"></code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell"></code></pre>
+
+      <h3></h3>
+      <p></p>
+      <p></p>
+      <h5></h5>
+      <pre><code class="language-powershell"></code></pre>
+      <p></p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"></code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell"></code></pre>
+
+      <h3></h3>
+      <p></p>
+      <p></p>
+      <h5></h5>
+      <pre><code class="language-powershell"></code></pre>
+      <p></p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"></code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell"></code></pre>
+
+      <h3></h3>
+      <p></p>
+      <p></p>
+      <h5></h5>
+      <pre><code class="language-powershell"></code></pre>
+      <p></p>
+      <div class="card-desc">
+        <h4>Example</h4>
+        <pre><code class="language-py line-numbers"></code></pre>
+      </div>
+      <h5>Output:</h5>
+      <pre><code class="language-powershell"></code></pre>
+
+
+
+
+
+
+
 
     </section>
 
