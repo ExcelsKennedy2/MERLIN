@@ -1194,51 +1194,78 @@ print("Created Dictionary:", dict_one) </code></pre>
       <p>In the above example, we have used the fromkeys() method to create a new dictionary and initialized the values of each key with 'Unknown'.</p>
 
       <h3>9) items()</h3>
-      <p></p>
-      <p></p>
-      <h5></h5>
-      <pre><code class="language-powershell"></code></pre>
-      <p></p>
+      <p>The items() method is a built-in function of Python dictionaries used to return a view object consisting of the 'key-value' pair from the dictionary in the form of tuple. This method provides a convenient way to access both keys and values at the same time.</p>
+      <p>The following is the syntax of the items() method in Python:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">dict_name.items()  </code></pre>
+      <p>Let us see a simple example showing how to use the items() method in the case of Python dictionaries.</p>
       <div class="card-desc">
         <h4>Example</h4>
-        <pre><code class="language-py line-numbers"></code></pre>
+        <pre><code class="language-py line-numbers"># python program to show the use of items() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+print("Given Dictionary:", dict_one)  
+  
+# using the items() method  
+print(dict_one.items())</code></pre>
       </div>
       <h5>Output:</h5>
-      <pre><code class="language-powershell"></code></pre>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+dict_items([('name', 'Sachin'), ('age', 22)])</code></pre>
+<p>In the above example, we have used the items() method to return all the key: value pairs from the dictionary as the dict_items object.</p>
 
-      <h3></h3>
-      <p></p>
-      <p></p>
-      <h5></h5>
-      <pre><code class="language-powershell"></code></pre>
-      <p></p>
+      <h3>10) setdefault()</h3>
+      <p>The setdefault() method is a built-in function of Python dictionaries that allow us to return the value associated with the specified key. In case, the key is not present in the dictionary, it adds the key with a specified default value and returns that value.</p>
+      <p>Here is the syntax of the setdefault() method in Python:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">dict_name.setdefault(key, default) </code></pre>
+      <p>Let us see a simple example showing the use case of the setdefault() method in Python.</p>
       <div class="card-desc">
         <h4>Example</h4>
-        <pre><code class="language-py line-numbers"></code></pre>
+        <pre><code class="language-py line-numbers"># python program to show the use of setdefault() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+print("Given Dictionary:", dict_one)  
+  
+# using the setdefault() method  
+age = dict_one.setdefault('age', 25)  
+salary = dict_one.setdefault('salary', 69000)  
+  
+print("Age:", age)  
+print("Salary:", salary)  
+print("Updated Dictionary:", dict_one) </code></pre>
       </div>
       <h5>Output:</h5>
-      <pre><code class="language-powershell"></code></pre>
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+Age: 22
+Salary: 69000
+Updated Dictionary: {'name': 'Sachin', 'age': 22, 'salary': 69000}</code></pre>
+<p>In this example, we have used the setdefault() method to return the value of the specified keys. Here, this method has returned the value of the key 'age'; however, in the case of the key 'salary', the key has been inserted in the dictionary, and the default value associated with it has been returned.</p>
 
-      <h3></h3>
-      <p></p>
-      <p></p>
-      <h5></h5>
-      <pre><code class="language-powershell"></code></pre>
-      <p></p>
+      <h3>11) values()</h3>
+      <p>In Python, the values() method allows us to return a view object consisting of all values from the dictionary, which can be accessed and iterated efficiently.</p>
+      <p>The syntax of the values() is as follows:</p>
+      <h5>Syntax:</h5>
+      <pre><code class="language-powershell">dict.values()  </code></pre>
+      <p>Let us take a look at an example showing how to use the values() method in Python.</p>
       <div class="card-desc">
         <h4>Example</h4>
-        <pre><code class="language-py line-numbers"></code></pre>
+        <pre><code class="language-py line-numbers"># python program to show the use of values() method  
+  
+# given dictionary  
+dict_one = {'name': 'Sachin', 'age': 22}  
+print("Given Dictionary:", dict_one)  
+  
+# using the values() method  
+  
+print(dict_one.values())  </code></pre>
       </div>
       <h5>Output:</h5>
-      <pre><code class="language-powershell"></code></pre>
-
-
-
-
-
-
-
-
+      <pre><code class="language-powershell">Given Dictionary: {'name': 'Sachin', 'age': 22}
+dict_values(['Sachin', 22])</code></pre>
+<p>In this example, we have used the values() method to return a dict_values object consisting of all the values from the given dictionary.</p>
     </section>
 
 
